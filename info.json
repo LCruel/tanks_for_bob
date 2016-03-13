@@ -1,0 +1,10 @@
+
+{
+  "name": "tanks",
+  "version": "0.0.9",
+  "title": "Tanks!",
+  "author": "KONAir",
+  "homepage": "none",
+  "description": "Tanks! adds additional tanks with various weapons and munitions!",
+  "dependencies": ["base >= 0.12.11"]
+}
