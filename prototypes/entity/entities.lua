@@ -1,3 +1,4 @@
+
 data:extend (
 {
 	--tank-assembly
@@ -133,18 +134,18 @@ data:extend (
 	        width = 64,
 	        height = 64,
 	        frame_count = 64,
-			scale = 1.75,
+		scale = 1.5,
 	        line_length = 8
 	      }
 	    },
 	    light = {intensity = 0.4, size = 16},
-	    slow_down_factor = 0.99,
+	    slow_down_factor = 0.98,
 	    smoke = "smoke-fast",
 	    smoke_count = 1,
 	    smoke_slow_down_factor = 0.95,
 	    damage = 
 	    {	
-	    	amount = 1.00, 
+	    	amount = 1.50, 
 	    	type = "fire"
 	    }
   	},
@@ -329,5 +330,60 @@ data:extend (
     },
     action_frequency = 30
   },
+ 
+--poison-cloud-2
+  {
+    type = "smoke-with-trigger",
+    name = "poison-cloud-2",
+    flags = {"not-on-map"},
+    show_when_smoke_off = true,
+    animation =
+    {
+      filename = "__base__/graphics/entity/cloud/cloud-45-frames.png",
+      priority = "low",
+      width = 256,
+      height = 256,
+      frame_count = 45,
+      animation_speed = 0.5,
+      line_length = 7,
+      scale = 3,
+    },
+    slow_down_factor = 0,
+    affected_by_wind = false,
+    cyclic = true,
+    duration = 60 * 20,
+    fade_away_duration = 2 * 60,
+    spread_duration = 10,
+    color = { r = 0.2, g = 0.9, b = 0.2 },
+    action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          type = "nested-result",
+          action =
+          {
+            type = "area",
+            perimeter = 11,
+            entity_flags = {"breaths-air"},
+            action_delivery =
+            {
+              type = "instant",
+              target_effects =
+              {
+                type = "damage",
+                damage = { amount = 25, type = "poison"}
+              }
+            }
+          }
+        }
+      }
+    },
+    action_frequency = 30
+  },
+ 
 }
 )

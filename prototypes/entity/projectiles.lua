@@ -87,7 +87,7 @@ data:extend(
             },
             {
             type = "create-entity",
-			entity_name = "poison-cloud"
+			entity_name = "poison-cloud-2"
 			--entity_name = "lazer-cloud"
             },
 			{
@@ -470,6 +470,36 @@ data:extend(
       width = 32,
       height = 32,
 	  scale = 1,
+      priority = "high"
+    },
+  },
+ --piercing-shotgun-pellet-2
+ {
+    type = "projectile",
+    name = "piercing-shotgun-pellet-2",
+    flags = {"not-on-map"},
+    collision_box = {{-0.05, -0.25}, {0.05, 0.25}},
+    acceleration = 0,
+    direction_only = true,
+    action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          type = "damage",
+          damage = {amount = 30, type = "physical"}
+        }
+      }
+    },
+    animation =
+    {
+      filename = "__base__/graphics/entity/piercing-bullet/piercing-bullet.png",
+      frame_count = 1,
+      width = 3,
+      height = 50,
       priority = "high"
     },
   },
