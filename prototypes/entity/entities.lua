@@ -142,7 +142,11 @@ data:extend (
 	    smoke = "smoke-fast",
 	    smoke_count = 1,
 	    smoke_slow_down_factor = 0.95,
-	    damage = {amount = 1.50, type = "fire"}
+	    damage = 
+	    {	
+	    	amount = 1.50, 
+	    	type = "fire"
+	    }
   	},
 	--massive-scorchmark
 	{
