@@ -267,6 +267,82 @@ data:extend(
       priority = "high"
     },
   },
+--cannon-projectile-2 (cannon-shell-2
+ {
+    type = "projectile",
+    name = "cannon-projectile-2",
+    flags = {"not-on-map"},
+    collision_box = {{-0.05, -1.1}, {0.05, 1.1}},
+    acceleration = 0,
+    direction_only = true,
+    piercing_damage = 300,
+    action =
+    {
+		{
+		  type = "direct",
+		  action_delivery =
+		  {
+			type = "instant",
+			target_effects =
+			{
+				{
+					type = "create-entity",
+					entity_name = "explosion"
+				},
+				{
+					type = "create-entity",
+					entity_name = "medium-scorchmark",
+					check_buildability = true
+				},
+				{
+					type = "damage",
+					damage = { amount = 500 , type = "physical"}
+				}
+			}
+		  }
+		},
+		{
+			type = "area",
+			perimeter = 12,
+			action_delivery =
+			{
+				type = "instant",
+				target_effects =
+				{
+					{
+						type = "damage",
+						damage = {amount = 500, type = "explosion"}
+					}
+				}
+			}
+        }
+    }
+	,
+    final_action =
+    {
+      type = "direct",
+      action_delivery =
+      {
+        type = "instant",
+        target_effects =
+        {
+          {
+            type = "create-entity",
+            entity_name = "small-scorchmark",
+            check_buildability = true
+          }
+        }
+      }
+    },
+    animation =
+    {
+      filename = "__base__/graphics/entity/bullet/bullet.png",
+      frame_count = 1,
+      width = 3,
+      height = 50,
+      priority = "high"
+    },
+  },
 --tank-rockets
   {
     type = "projectile",
@@ -401,5 +477,5 @@ data:extend(
       priority = "high"
     },
   },
-  }
+}
 )
