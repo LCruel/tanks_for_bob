@@ -216,18 +216,14 @@ data:extend(
 				},
 				{
 					type = "damage",
-					damage = { amount = 245 , type = "physical"}
+					damage = { amount = 200 , type = "physical"}
 				},
-				{
-					type = "damage",
-					damage = { amount = 80 , type = "explosion"}
-				}
 			}
 		  }
 		},
 		{
 			type = "area",
-			perimeter = 8,
+			perimeter = 3,
 			action_delivery =
 			{
 				type = "instant",
@@ -275,7 +271,7 @@ data:extend(
     collision_box = {{-0.05, -1.1}, {0.05, 1.1}},
     acceleration = 0,
     direction_only = true,
-    piercing_damage = 300,
+    piercing_damage = 400,
     action =
     {
 		{
@@ -287,7 +283,7 @@ data:extend(
 			{
 				{
 					type = "create-entity",
-					entity_name = "explosion"
+					entity_name = "big-explosion"
 				},
 				{
 					type = "create-entity",
@@ -303,7 +299,7 @@ data:extend(
 		},
 		{
 			type = "area",
-			perimeter = 12,
+			perimeter = 8,
 			action_delivery =
 			{
 				type = "instant",
@@ -311,7 +307,7 @@ data:extend(
 				{
 					{
 						type = "damage",
-						damage = {amount = 500, type = "explosion"}
+						damage = {amount = 350, type = "explosion"}
 					}
 				}
 			}
