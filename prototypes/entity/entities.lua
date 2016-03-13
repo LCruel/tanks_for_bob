@@ -133,8 +133,8 @@ data:extend (
 	        width = 64,
 	        height = 64,
 	        frame_count = 64,
-			--scale = 4,
-	        line_length = 16
+		scale = 6,
+	        line_length = 8
 	      }
 	    },
 	    light = {intensity = 0.4, size = 16},
