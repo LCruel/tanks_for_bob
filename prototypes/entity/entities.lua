@@ -133,18 +133,18 @@ data:extend (
 	        width = 64,
 	        height = 64,
 	        frame_count = 64,
-		scale = 1.5,
+			scale = 1.75,
 	        line_length = 8
 	      }
 	    },
 	    light = {intensity = 0.4, size = 16},
-	    slow_down_factor = 0.98,
+	    slow_down_factor = 0.99,
 	    smoke = "smoke-fast",
 	    smoke_count = 1,
 	    smoke_slow_down_factor = 0.95,
 	    damage = 
 	    {	
-	    	amount = 1.50, 
+	    	amount = 1.00, 
 	    	type = "fire"
 	    }
   	},
