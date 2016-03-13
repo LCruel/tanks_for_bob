@@ -1,5 +1,5 @@
 data:extend (
-	{
+{
 	--tank-assembly
 	{
     type = "assembling-machine",
@@ -119,35 +119,33 @@ data:extend (
     module_slots = 1,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
-  
-  --entities?
---tank-flame-thrower-explosion
-    {
-    type = "flame-thrower-explosion",
-    name = "tank-flame-thrower-explosion",
-    flags = {"not-on-map"},
-    animation_speed = 1,
-    animations =
-    {
-      {
-        filename = "__base__/graphics/entity/flame-thrower-explosion/flame-thrower-explosion.png",
-        priority = "extra-high",
-        width = 64,
-        height = 64,
-        frame_count = 64,
-		--scale = 4,
-        line_length = 8
-      }
-    },
-    light = {intensity = 0.4, size = 16},
-    slow_down_factor = 0.98,
-    smoke = "smoke-fast",
-    smoke_count = 1,
-    smoke_slow_down_factor = 0.95,
-    damage = {amount = 0.5, type = "fire"}
-  },
---massive-scorchmark
-{
+	--tank-flame-thrower-explosion
+	{
+	    type = "flame-thrower-explosion",
+	    name = "tank-flame-thrower-explosion",
+	    flags = {"not-on-map"},
+	    animation_speed = 1,
+	    animations =
+	    {
+	      {
+	        filename = "__base__/graphics/entity/flame-thrower-explosion/flame-thrower-explosion.png",
+	        priority = "extra-high",
+	        width = 64,
+	        height = 64,
+	        frame_count = 64,
+			--scale = 4,
+	        line_length = 16
+	      }
+	    },
+	    light = {intensity = 0.4, size = 16},
+	    slow_down_factor = 0.98,
+	    smoke = "smoke-fast",
+	    smoke_count = 1,
+	    smoke_slow_down_factor = 0.95,
+	    damage = {amount = 1.50, type = "fire"}
+  	},
+	--massive-scorchmark
+	{
     type = "corpse",
     name = "massive-scorchmark",
     icon = "__base__/graphics/icons/small-scorchmark.png",
@@ -202,8 +200,8 @@ data:extend (
       }
     }
   },
---land-mine-poison
-  {
+	--land-mine-poison
+  	{
     type = "land-mine",
     name = "land-mine-poison",
     icon = "__base__/graphics/icons/land-mine.png",
@@ -263,19 +261,19 @@ data:extend (
             },
           },
           {
-				type = "create-entity",
-				entity_name = "poison-cloud"
+		type = "create-entity",
+		entity_name = "poison-cloud"
           },
           {
-            type = "damage",
-            damage = { amount = 500, type = "explosion"}
+		type = "damage",
+		damage = { amount = 500, type = "explosion"}
           }
         }
       }
     },
   },
---lazer-cloud
-  {
+	--lazer-cloud
+  	{
     type = "smoke",
     name = "lazer-cloud",
     flags = {"not-on-map"},
@@ -327,7 +325,5 @@ data:extend (
     },
     action_frequency = 30
   },
-
-  
 }
 )
