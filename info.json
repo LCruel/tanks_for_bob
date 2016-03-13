@@ -1,9 +1,9 @@
 
 {
-  "name": "tanks",
-  "version": "0.0.9",
-  "title": "Tanks!",
-  "author": "KONAir",
+  "name": "Tanks for Bob",
+  "version": "1.0",
+  "title": "Tanks! and now also for Bob!!",
+  "author": "LCruel, orginal author: KONAir, ",
   "homepage": "none",
   "description": "Tanks! adds additional tanks with various weapons and munitions!",
   "dependencies": ["base >= 0.12.11"]
