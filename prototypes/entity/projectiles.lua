@@ -187,7 +187,6 @@ data:extend(
       priority = "high"
     },
   },
-
 --45mm-projectile
  {
     type = "projectile",
@@ -344,7 +343,6 @@ data:extend(
       }
     }
   },
- 
  --WMD-Mortar
  {
     type = "projectile",
@@ -403,6 +401,5 @@ data:extend(
       priority = "high"
     },
   },
-
   }
 )
