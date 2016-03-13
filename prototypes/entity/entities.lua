@@ -133,7 +133,7 @@ data:extend (
 	        width = 64,
 	        height = 64,
 	        frame_count = 64,
-		scale = 6,
+		scale = 1.5,
 	        line_length = 8
 	      }
 	    },
