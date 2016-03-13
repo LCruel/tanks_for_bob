@@ -22,7 +22,7 @@ data:extend(
         action_delivery =
         {
           type = "projectile",
-          projectile = "piercing-shotgun-pellet",
+          projectile = "piercing-shotgun-pellet-2",
           starting_speed = 1,
           direction_deviation = 0.3,
           range_deviation = 0.3,
@@ -63,7 +63,7 @@ data:extend(
             },
             {
               type = "damage",
-              damage = { amount = 4 , type = "physical"}
+              damage = { amount = 15 , type = "physical"}
             }
           }
         }
@@ -163,8 +163,8 @@ data:extend(
           type = "projectile",
           projectile = "50mm-projectile",
           starting_speed = 1,
-          direction_deviation = 0.1,
-          range_deviation = 0.1,
+          direction_deviation = 0.3,
+          range_deviation = 0.3,
           max_range = 750
         }
       },
@@ -197,8 +197,8 @@ data:extend(
           type = "projectile",
           projectile = "50mm-projectile-poison",
           starting_speed = 1,
-          direction_deviation = 0.1,
-          range_deviation = 0.1,
+          direction_deviation = 0.3,
+          range_deviation = 0.3,
           max_range = 750
         }
       },
@@ -306,7 +306,7 @@ data:extend(
     order = "a[tank-ammo]",
     stack_size = 100
   },
-  --cannon-shell-2
+--cannon-shell-2
   {
     type = "ammo",
     name = "cannon-shell-2",

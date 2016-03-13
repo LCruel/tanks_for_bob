@@ -41,7 +41,7 @@ data:extend(
           {
             {
             type = "damage",
-            damage = {amount = 125, type = "explosion"}
+            damage = {amount = 350, type = "explosion"}
             },
             {
             type = "create-entity",
@@ -107,7 +107,7 @@ data:extend(
           {
             {
             type = "damage",
-            damage = {amount = 75, type = "explosion"}
+            damage = {amount = 350, type = "explosion"}
             }
           }
         }
@@ -223,7 +223,7 @@ data:extend(
 		},
 		{
 			type = "area",
-			perimeter = 3,
+			perimeter = 2,
 			action_delivery =
 			{
 				type = "instant",
@@ -299,7 +299,7 @@ data:extend(
 		},
 		{
 			type = "area",
-			perimeter = 8,
+			perimeter = 4,
 			action_delivery =
 			{
 				type = "instant",
@@ -370,7 +370,7 @@ data:extend(
                 {
                   {
                     type = "damage",
-                    damage = {amount = 50, type = "explosion"}
+                    damage = {amount = 250, type = "explosion"}
                   },
                   {
                     type = "create-entity",
@@ -452,7 +452,7 @@ data:extend(
           {
             {
             type = "damage",
-            damage = {amount = 750, type = "explosion"}
+            damage = {amount = 1750, type = "explosion"}
             },
             {
             type = "create-entity",
