@@ -1,7 +1,7 @@
 data:extend(
 {  
 --shell-brick
-  {
+	{
     type = "ammo",
     name = "piercing-shotgun-shell-brick",
     icon = "__tanks__/graphics/icons/shell-brick.png",
@@ -36,7 +36,7 @@ data:extend(
     stack_size = 50
   },
 --bullet-brick
-  {
+	{
     type = "ammo",
     name = "ap-bullet-brick",
     icon = "__tanks__/graphics/icons/bullet-brick.png",
@@ -140,7 +140,6 @@ data:extend(
     order = "a[tank-ammo]",
     stack_size = 100
   },
-
 --50mm-mortar
 	{
     type = "ammo",
@@ -278,7 +277,7 @@ data:extend(
     stack_size = 10
   },
 --rocketpack
-  {
+  	{
     type = "ammo",
     name = "rocketpack",
     icon = "__tanks__/graphics/icons/rocket-pack.png",
@@ -307,7 +306,6 @@ data:extend(
     order = "a[tank-ammo]",
     stack_size = 100
   },
-  
   --cannon-shell-2
   {
     type = "ammo",
@@ -329,7 +327,7 @@ data:extend(
         action_delivery =
         {
           type = "projectile",
-          projectile = "cannon-projectile",
+          projectile = "cannon-projectile-2",
           starting_speed = 1.5,
           direction_deviation = 0.05,
           range_deviation = 0.05,
