@@ -33,10 +33,10 @@ data:extend(
 	category = "tank-crafting",
     ingredients =
     {
-      {"iron-plate", 1},
-      --{"electronic-circuit", 3},
-      --{"iron-gear-wheel", 5},
-      --{"assembling-machine-2", 1}
+      {"steel-plate", 75},
+      {"advanced-circuit", 60},
+      {"processing-unit", 5},
+      {"electric-engine-unit",25}
     },
     result = "tank-light-chasis-wlsk"
   },
