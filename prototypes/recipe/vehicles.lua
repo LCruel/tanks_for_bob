@@ -51,7 +51,6 @@ data:extend(
     },
     result = "nade-tank"
   },
-  
 --flame-tank-wlsk
   {
     type = "recipe",
@@ -132,8 +131,7 @@ data:extend(
     },
     result = "rocket-tank"
   },
-  
---super-tank
+--super-tank A
   {
     type = "recipe",
     name = "super-tank",
@@ -142,13 +140,14 @@ data:extend(
 	energy_required = 100,
     ingredients =
     {
-      {"engine-unit", 30},
+      {"electric-engine-unit", 30},
       {"steel-plate", 75},
-      {"iron-gear-wheel", 40},
+      {"processing-unit", 40},
       {"advanced-circuit", 15}
     },
     result = "super-tank"
   },
+--super-tank B
   {
     type = "recipe",
     name = "super-tank-alternate",
@@ -157,13 +156,14 @@ data:extend(
 	energy_required = 100,
     ingredients =
     {
-      {"engine-unit", 30},
+      {"electric-engine-unit", 30},
       {"steel-plate", 75},
-      {"iron-gear-wheel", 40},
+      {"processing-unit", 40},
       {"advanced-circuit", 15}
     },
     result = "super-tank-alternate"
   },
+--super-tank C
   {
     type = "recipe",
     name = "super-tank-wmd",
@@ -172,13 +172,14 @@ data:extend(
 	energy_required = 240,
     ingredients =
     {
-      {"engine-unit", 30},
+      {"electric-engine-unit", 30},
       {"steel-plate", 75},
-      {"iron-gear-wheel", 40},
+      {"processing-unit", 40},
       {"advanced-circuit", 15}
     },
     result = "super-tank-wmd"
   },
+-- Car flamer  
   {
     type = "recipe",
     name = "car-flamer",

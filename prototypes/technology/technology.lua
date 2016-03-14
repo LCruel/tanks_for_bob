@@ -3,7 +3,7 @@ data:extend(
   {
     type = "technology",
     name = "modular-tank-research",
-    icon = "__tanks__/graphics/icons/modular-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
     effects =
     {
       {
@@ -72,7 +72,7 @@ data:extend(
   {
     type = "technology",
     name = "modular-tank-research2",
-    icon = "__tanks__/graphics/icons/modular-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
     effects =
     {
 	  {
@@ -104,7 +104,7 @@ data:extend(
   {
     type = "technology",
     name = "modular-tank-research3",
-    icon = "__tanks__/graphics/icons/modular-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
     effects =
     {
 	  {
@@ -136,7 +136,7 @@ data:extend(
   {
     type = "technology",
     name = "mechanized-infantry-research",
-    icon = "__tanks__/graphics/icons/mech-inf.png",
+    icon = "__tanks_for_bob__/graphics/icons/mech-inf.png",
     effects =
     {
   	  {
@@ -164,7 +164,7 @@ data:extend(
     {
     type = "technology",
     name = "new-munitions",
-    icon = "__tanks__/graphics/icons/chemical-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/chemical-tank-research.png",
     effects =
     {
 	  {
@@ -189,7 +189,7 @@ data:extend(
     {
     type = "technology",
     name = "organic-explosives",
-    icon = "__tanks__/graphics/icons/universal-explosive.png",
+    icon = "__tanks_for_bob__/graphics/icons/universal-explosive.png",
     effects =
     {
 	  {
@@ -209,7 +209,7 @@ data:extend(
   {
     type = "technology",
     name = "super-tank-research",
-    icon = "__tanks__/graphics/icons/super-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank-research.png",
     effects =
     {
 	  {
@@ -233,7 +233,7 @@ data:extend(
   {
     type = "technology",
     name = "super-tank-research2",
-    icon = "__tanks__/graphics/icons/super-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank-research.png",
     effects =
     {
 	  {

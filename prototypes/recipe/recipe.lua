@@ -1,5 +1,6 @@
 data:extend(
 {
+-- tank-assembling-machine
   {
     type = "recipe",
     name = "tank-assembling-machine",
@@ -13,6 +14,7 @@ data:extend(
     },
     result = "tank-assembling-machine"
   },
+-- tank-ammo-assembling-machine
   {
     type = "recipe",
     name = "tank-ammo-assembling-machine",
@@ -26,7 +28,8 @@ data:extend(
     },
     result = "tank-ammo-assembling-machine"
   },
-    {
+-- tank-light-chasis-wlsk
+  {
     type = "recipe",
     name = "tank-light-chasis-wlsk",
     enabled = "false",

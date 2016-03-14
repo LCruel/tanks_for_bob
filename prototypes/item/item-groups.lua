@@ -3,7 +3,7 @@ data:extend(
   {
     type = "item-group",
     name = "tanks",
-    icon = "__tanks__/graphics/icons/tank-group.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-group.png",
     order = "z",
     inventory_order = "z"
   },

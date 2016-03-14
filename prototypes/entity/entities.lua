@@ -5,7 +5,7 @@ data:extend (
 	{
     type = "assembling-machine",
     name = "tank-assembling-machine",
-    icon = "__tanks__/graphics/icons/tank-assembling-machine.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-assembling-machine.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "tank-assembling-machine"},
     max_health = 300,
@@ -39,7 +39,7 @@ data:extend (
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     animation =
     {
-      filename = "__tanks__/graphics/entity/tank-assembling-machine/tank-assembling-machine.png",
+      filename = "__tanks_for_bob__/graphics/entity/tank-assembling-machine/tank-assembling-machine.png",
       priority = "high",
       width = 142,
       height = 113,
@@ -64,7 +64,7 @@ data:extend (
 	{
     type = "assembling-machine",
     name = "tank-ammo-assembling-machine",
-    icon = "__tanks__/graphics/icons/tank-ammo-assembling-machine.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-ammo-assembling-machine.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "tank-ammo-assembling-machine"},
     max_health = 150,
@@ -99,7 +99,7 @@ data:extend (
     --fast_replaceable_group = "assembling-machine",
     animation =
     {
-      filename = "__tanks__/graphics/entity/tank-assembling-machine/tank-assembling-machine.png",
+      filename = "__tanks_for_bob__/graphics/entity/tank-assembling-machine/tank-assembling-machine.png",
       priority = "high",
       width = 142,
       height = 113,
