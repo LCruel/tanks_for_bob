@@ -280,9 +280,9 @@ data:extend(
     tank_driving = true,
     weight = 20000,
     inventory_size = 80,
-    guns = { "tank-cannon-2", "tank-flamer" },
+    guns = { "tank-flamer", "tank-flamer-2" },
   },
---auto-tank
+--auto-tank tank-cannon-2
   {
     type = "car",
     name = "auto-tank",
@@ -561,7 +561,7 @@ data:extend(
     tank_driving = true,
     weight = 10000,
     inventory_size = 40,
-    guns = { "tank-auto-cannon", "combat-shotgun" },
+    guns = { "tank-auto-cannon", "tank-cannon-2" },
   },
 --nade-tank
    {
@@ -842,7 +842,7 @@ data:extend(
     tank_driving = true,
     weight = 10000,
     inventory_size = 40,
-    guns = { "tank-nade-cannon" },
+    guns = { "tank-machinegun-turret", "tank-nade-cannon" },
   },
 --flame-tank-wlsk
   {
@@ -1123,7 +1123,7 @@ data:extend(
     tank_driving = true,
     weight = 20000,
     inventory_size = 80,
-    guns = { "tank-cannon-2", "tank-flamer" },
+    guns = { "tank-flamer", "tank-flamer-2" },
   },
 --auto-tank-wlsk
   {
@@ -1404,7 +1404,7 @@ data:extend(
     tank_driving = true,
     weight = 10000,
     inventory_size = 40,
-    guns = { "tank-auto-cannon", "combat-shotgun" },
+    guns = { "tank-auto-cannon", "tank-cannon-2" },
   },
 --nade-tank-wlsk
    {
@@ -2247,9 +2247,8 @@ data:extend(
     tank_driving = true,
     weight = 10000,
     inventory_size = 40,
-    guns = { "tank-rocket-cannon", "tank-cannon-2" },
+    guns = { "tank-machinegun-turret", "tank-rocket-cannon"},
   },
-
   --Super Heavy
   {
     type = "car",
@@ -2536,7 +2535,7 @@ data:extend(
     tank_driving = true,
     weight = 50000,
     inventory_size = 64,
-    guns = { "tank-auto-cannon", "tank-nade-cannon", "tank-machinegun-turret" },
+    guns = { "tank-machinegun-turret","tank-auto-cannon", "tank-cannon-2" },
   },
   --Super Heavy Alternate
   {
@@ -2824,7 +2823,7 @@ data:extend(
     tank_driving = true,
     weight = 50000,
     inventory_size = 64,
-    guns = { "tank-cannon-2", "tank-flamer", "tank-mine-cannon" },
+    guns = { "tank-machinegun-turret", "tank-flamer", "tank-flamer-2", "tank-mine-cannon" },
   },
   --Super Heavy WMD
   {
@@ -3112,7 +3111,7 @@ data:extend(
     tank_driving = true,
     weight = 50000,
     inventory_size = 64,
-    guns = { "tank-wmd-cannon", "tank-auto-cannon" },
+    guns = { "tank-wmd-cannon" },
   },
   --car-flamer
   {

@@ -1,5 +1,6 @@
 data:extend(
 {
+-- tank-cannon-2
   {
     type = "gun",
     name = "tank-cannon-2",
@@ -35,12 +36,31 @@ data:extend(
     order = "e[flame-thrower]",
     attack_parameters =
     {
-      type = "projectile",
-	 		ammo_category = "tank-spray-ammo",
-      cooldown = 1,
-      movement_slow_down_factor = 0.6,
-      projectile_creation_distance = 0.7,
-      range = 200
+		type = "projectile",
+		ammo_category = "tank-spray-ammo",
+		cooldown = 1,
+		movement_slow_down_factor = 0.6,
+		projectile_creation_distance = 0.7,
+		range = 12
+    },
+    stack_size = 1
+  },
+--tank-flamer-2
+  {
+    type = "gun",
+    name = "tank-flamer-2",
+    icon = "__base__/graphics/icons/flame-thrower.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "gun",
+    order = "e[flame-thrower]",
+    attack_parameters =
+    {
+		type = "projectile",
+		ammo_category = "tank-spray-ammo-2",
+		cooldown = 1,
+		movement_slow_down_factor = 0.6,
+		projectile_creation_distance = 0.7,
+		range = 12
     },
     stack_size = 1
   },

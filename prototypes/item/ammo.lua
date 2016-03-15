@@ -89,17 +89,95 @@ data:extend(
         type = "direct",
         action_delivery =
         {
-          {
-            type = "flame-thrower",
-            explosion = "tank-flame-thrower-explosion",
-            direction_deviation = 0.07,
-            speed_deviation = 0.1,
-            starting_frame_deviation = 0.07,
-            projectile_starting_speed = 0.2,
-            starting_distance = 0.6,
-          }
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 0.07,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
         }
       }
+    },
+    magazine_size = 500,
+    subgroup = "tank-ammo",
+    order = "b[tank-ammo]",
+    stack_size = 10
+  },
+--flame-thrower-ammo-tanker-2
+	{
+    type = "ammo",
+    name = "flame-thrower-ammo-tanker-2",
+    icon = "__tanks_for_bob__/graphics/icons/flame-thrower-ammo-tanker.png",
+    flags = {"goes-to-main-inventory"},
+    ammo_type =
+    {
+      category = "tank-spray-ammo-2",
+      target_type = "direction",
+      action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+        }		
+      }
+	  
     },
     magazine_size = 500,
     subgroup = "tank-ammo",
@@ -135,7 +213,7 @@ data:extend(
         }
       },
     },
-    magazine_size = 3,
+    magazine_size = 12,
     subgroup = "tank-ammo",
     order = "a[tank-ammo]",
     stack_size = 100

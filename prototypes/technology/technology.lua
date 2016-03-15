@@ -20,6 +20,10 @@ data:extend(
       },
 	  {
         type = "unlock-recipe",
+        recipe = "flame-thrower-ammo-tanker-2"
+      },
+	  {
+        type = "unlock-recipe",
         recipe = "tank-ammo-universal-casing"
       },
 	  {
