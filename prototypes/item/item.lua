@@ -100,5 +100,16 @@ data:extend(
     order = "z[tank-ammo]",
     stack_size = 100
   },
+--Iron-wall
+  {
+    type = "item",
+    name = "iron-wall",
+    icon = "__tanks_for_bob__/graphics/icons/iron-wall.png",
+    flags = {"goes-to-quickbar"},
+    subgroup = "defensive-structure",
+    order = "a[iron-wall]-a[iron-wall]",
+    place_result = "iron-wall",
+    stack_size = 50
+  },
 }
 )
