@@ -565,9 +565,9 @@ data:extend(
   },
 --nade-tank
    {
-    type = "car",
-    name = "nade-tank",
-	icon = "__tanks_for_bob__/graphics/icons/nade-tank.png",
+      type = "car",
+     name = "nade-tank",
+	   icon = "__tanks_for_bob__/graphics/icons/nade-tank.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "nade-tank"},
     max_health = 1000,
@@ -843,7 +843,7 @@ data:extend(
     weight = 10000,
     inventory_size = 40,
     guns = { "tank-machinegun-turret", "tank-nade-cannon" },
-  },
+   },
 --flame-tank-wlsk
   {
     type = "car",
@@ -1410,7 +1410,7 @@ data:extend(
    {
     type = "car",
     name = "nade-tank-wlsk",
-	icon = "__tanks_for_bob__/graphics/icons/nade-tank-wlsk.png",
+	  icon = "__tanks_for_bob__/graphics/icons/nade-tank-wlsk.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "nade-tank-wlsk"},
     max_health = 1750,
@@ -1686,7 +1686,7 @@ data:extend(
     weight = 10000,
     inventory_size = 40,
     guns = { "tank-nade-cannon" },
-  },
+    },
 --mine-tank
   {
     type = "car",
