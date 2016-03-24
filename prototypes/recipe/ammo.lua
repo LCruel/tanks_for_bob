@@ -15,6 +15,19 @@ data:extend(
     },
     result = "flame-thrower-ammo-tanker",
   },
+--flame-thrower-ammo-tanker-2
+  {
+    type = "recipe",
+    name = "flame-thrower-ammo-tanker-2",
+    enabled = "false",
+	category = "tank-ammo-component",
+    energy_required = 10,
+    ingredients =
+    {
+      {"flame-thrower-ammo-tanker", 7},
+    },
+    result = "flame-thrower-ammo-tanker-2",
+  },
 --ap-bullet-brick
   {
     type = "recipe",

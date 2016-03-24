@@ -5,7 +5,7 @@ data:extend(
   {
     type = "car",
     name = "flame-tank",
-    icon = "__tanks__/graphics/icons/flame-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/flame-tank.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "flame-tank"},
     max_health = 1250,
@@ -280,13 +280,13 @@ data:extend(
     tank_driving = true,
     weight = 20000,
     inventory_size = 80,
-    guns = { "tank-cannon-2", "tank-flamer" },
+    guns = { "tank-flamer", "tank-flamer-2" },
   },
---auto-tank
+--auto-tank tank-cannon-2
   {
     type = "car",
     name = "auto-tank",
-    icon = "__tanks__/graphics/icons/auto-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/auto-tank.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "auto-tank"},
     max_health = 1000,
@@ -561,13 +561,13 @@ data:extend(
     tank_driving = true,
     weight = 10000,
     inventory_size = 40,
-    guns = { "tank-auto-cannon", "combat-shotgun" },
+    guns = { "tank-auto-cannon", "tank-cannon-2" },
   },
 --nade-tank
    {
-    type = "car",
-    name = "nade-tank",
-	icon = "__tanks__/graphics/icons/nade-tank.png",
+      type = "car",
+     name = "nade-tank",
+	   icon = "__tanks_for_bob__/graphics/icons/nade-tank.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "nade-tank"},
     max_health = 1000,
@@ -842,13 +842,13 @@ data:extend(
     tank_driving = true,
     weight = 10000,
     inventory_size = 40,
-    guns = { "tank-nade-cannon" },
-  },
+    guns = { "tank-machinegun-turret", "tank-nade-cannon" },
+   },
 --flame-tank-wlsk
   {
     type = "car",
     name = "flame-tank-wlsk",
-    icon = "__tanks__/graphics/icons/flame-tank-wlsk.png",
+    icon = "__tanks_for_bob__/graphics/icons/flame-tank-wlsk.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "flame-tank-wlsk"},
 	max_health = 2000,
@@ -1123,13 +1123,13 @@ data:extend(
     tank_driving = true,
     weight = 20000,
     inventory_size = 80,
-    guns = { "tank-cannon-2", "tank-flamer" },
+    guns = { "tank-flamer", "tank-flamer-2" },
   },
 --auto-tank-wlsk
   {
     type = "car",
     name = "auto-tank-wlsk",
-    icon = "__tanks__/graphics/icons/auto-tank-wlsk.png",
+    icon = "__tanks_for_bob__/graphics/icons/auto-tank-wlsk.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "auto-tank-wlsk"},
     max_health = 1750,
@@ -1404,13 +1404,13 @@ data:extend(
     tank_driving = true,
     weight = 10000,
     inventory_size = 40,
-    guns = { "tank-auto-cannon", "combat-shotgun" },
+    guns = { "tank-auto-cannon", "tank-cannon-2" },
   },
 --nade-tank-wlsk
    {
     type = "car",
     name = "nade-tank-wlsk",
-	icon = "__tanks__/graphics/icons/nade-tank-wlsk.png",
+	  icon = "__tanks_for_bob__/graphics/icons/nade-tank-wlsk.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "nade-tank-wlsk"},
     max_health = 1750,
@@ -1686,12 +1686,12 @@ data:extend(
     weight = 10000,
     inventory_size = 40,
     guns = { "tank-nade-cannon" },
-  },
+    },
 --mine-tank
   {
     type = "car",
     name = "mine-tank",
-    icon = "__tanks__/graphics/icons/mine-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/mine-tank.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "mine-tank"},
     max_health = 1000,
@@ -1972,7 +1972,7 @@ data:extend(
   {
     type = "car",
     name = "rocket-tank",
-    icon = "__tanks__/graphics/icons/rocket-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/rocket-tank.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "rocket-tank"},
     max_health = 1000,
@@ -2247,14 +2247,13 @@ data:extend(
     tank_driving = true,
     weight = 10000,
     inventory_size = 40,
-    guns = { "tank-rocket-cannon", "tank-cannon-2" },
+    guns = { "tank-machinegun-turret", "tank-rocket-cannon"},
   },
-
   --Super Heavy
   {
     type = "car",
     name = "super-tank",
-    icon = "__tanks__/graphics/icons/super-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "super-tank"},
     max_health = 4500,
@@ -2365,22 +2364,22 @@ data:extend(
           stripes =
           {
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-1.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-2.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-3.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-4.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
@@ -2457,7 +2456,7 @@ data:extend(
       layers =
       {
         {
-          filename = "__tanks__/graphics/entity/super-tank/turret.png",
+          filename = "__tanks_for_bob__/graphics/entity/super-tank/turret.png",
           line_length = 8,
           width = 92,
           height = 69,
@@ -2536,13 +2535,13 @@ data:extend(
     tank_driving = true,
     weight = 50000,
     inventory_size = 64,
-    guns = { "tank-auto-cannon", "tank-nade-cannon", "tank-machinegun-turret" },
+    guns = { "tank-machinegun-turret","tank-auto-cannon", "tank-cannon-2" },
   },
   --Super Heavy Alternate
   {
     type = "car",
     name = "super-tank-alternate",
-    icon = "__tanks__/graphics/icons/super-tank-alternate.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank-alternate.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "super-tank-alternate"},
     max_health = 4500,
@@ -2653,22 +2652,22 @@ data:extend(
           stripes =
           {
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-1.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-2.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-3.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-4.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
@@ -2745,7 +2744,7 @@ data:extend(
       layers =
       {
         {
-          filename = "__tanks__/graphics/entity/super-tank/turret.png",
+          filename = "__tanks_for_bob__/graphics/entity/super-tank/turret.png",
           line_length = 8,
           width = 92,
           height = 69,
@@ -2824,13 +2823,13 @@ data:extend(
     tank_driving = true,
     weight = 50000,
     inventory_size = 64,
-    guns = { "tank-cannon-2", "tank-flamer", "tank-mine-cannon" },
+    guns = { "tank-machinegun-turret", "tank-flamer", "tank-flamer-2", "tank-mine-cannon" },
   },
   --Super Heavy WMD
   {
     type = "car",
     name = "super-tank-wmd",
-    icon = "__tanks__/graphics/icons/super-tank-wmd.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank-wmd.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "super-tank-wmd"},
     max_health = 4500,
@@ -2941,22 +2940,22 @@ data:extend(
           stripes =
           {
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-1.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-2.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-3.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__tanks__/graphics/entity/super-tank/base-4.png",
+             filename = "__tanks_for_bob__/graphics/entity/super-tank/base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
@@ -3033,7 +3032,7 @@ data:extend(
       layers =
       {
         {
-          filename = "__tanks__/graphics/entity/super-tank/turret.png",
+          filename = "__tanks_for_bob__/graphics/entity/super-tank/turret.png",
           line_length = 8,
           width = 92,
           height = 69,
@@ -3112,13 +3111,13 @@ data:extend(
     tank_driving = true,
     weight = 50000,
     inventory_size = 64,
-    guns = { "tank-wmd-cannon", "tank-auto-cannon" },
+    guns = { "tank-wmd-cannon" },
   },
   --car-flamer
   {
     type = "car",
     name = "car-flamer",
-    icon = "__tanks__/graphics/icons/car-flamer.png",
+    icon = "__tanks_for_bob__/graphics/icons/car-flamer.png",
     flags = {"pushable", "placeable-neutral", "player-creation", "placeable-off-grid"},
     minable = {mining_time = 1, result = "car-flamer"},
     max_health = 250,

@@ -4,7 +4,7 @@ data:extend(
   {
     type = "item",
     name = "tank-assembling-machine",
-    icon = "__tanks__/graphics/icons/tank-assembling-machine.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-assembling-machine.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
     order = "y[assembling-machine-2]",
@@ -14,7 +14,7 @@ data:extend(
   {
     type = "item",
     name = "tank-ammo-assembling-machine",
-    icon = "__tanks__/graphics/icons/tank-ammo-assembling-machine.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-ammo-assembling-machine.png",
     flags = {"goes-to-quickbar"},
     subgroup = "production-machine",
     order = "z[assembling-machine-2]",
@@ -24,7 +24,7 @@ data:extend(
   {
     type = "item",
     name = "tank-light-chasis-wlsk",
-    icon = "__tanks__/graphics/icons/tank-light-chasis-wlsk.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-light-chasis-wlsk.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "tank-vehicle-upgrades",
 	order = "a[tank-vehicle-upgrades]-a[tank-light-chasis-wlsk]",
@@ -34,7 +34,7 @@ data:extend(
 	{
     type = "item",
     name = "tank-ammo-universal-casing",
-    icon = "__tanks__/graphics/icons/universal-casing.png",
+    icon = "__tanks_for_bob__/graphics/icons/universal-casing.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "tank-ammo-components",
     order = "a[tank-ammo-components]-a[universal-casing]",
@@ -43,7 +43,7 @@ data:extend(
 	{
     type = "item",
     name = "tank-ammo-universal-explosive",
-    icon = "__tanks__/graphics/icons/universal-explosive.png",
+    icon = "__tanks_for_bob__/graphics/icons/universal-explosive.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "tank-ammo-components",
     order = "a[tank-ammo-components]-b[universal-explosive]",
@@ -65,7 +65,7 @@ data:extend(
   {
     type = "capsule",
     name = "fish-kit",
-    icon = "__tanks__/graphics/icons/fish-kit.png",
+    icon = "__tanks_for_bob__/graphics/icons/fish-kit.png",
     flags = {"goes-to-quickbar"},
     capsule_action =
     {
@@ -99,6 +99,17 @@ data:extend(
     subgroup = "tank-ammo-infantry",
     order = "z[tank-ammo]",
     stack_size = 100
+  },
+--Iron-wall
+  {
+    type = "item",
+    name = "iron-wall",
+    icon = "__tanks_for_bob__/graphics/icons/iron-wall.png",
+    flags = {"goes-to-quickbar"},
+    subgroup = "defensive-structure",
+    order = "a[iron-wall]-a[iron-wall]",
+    place_result = "iron-wall",
+    stack_size = 50
   },
 }
 )

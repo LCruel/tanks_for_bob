@@ -5,7 +5,7 @@ data:extend (
 	{
     type = "assembling-machine",
     name = "tank-assembling-machine",
-    icon = "__tanks__/graphics/icons/tank-assembling-machine.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-assembling-machine.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "tank-assembling-machine"},
     max_health = 300,
@@ -39,7 +39,7 @@ data:extend (
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     animation =
     {
-      filename = "__tanks__/graphics/entity/tank-assembling-machine/tank-assembling-machine.png",
+      filename = "__tanks_for_bob__/graphics/entity/tank-assembling-machine/tank-assembling-machine.png",
       priority = "high",
       width = 142,
       height = 113,
@@ -64,7 +64,7 @@ data:extend (
 	{
     type = "assembling-machine",
     name = "tank-ammo-assembling-machine",
-    icon = "__tanks__/graphics/icons/tank-ammo-assembling-machine.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-ammo-assembling-machine.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "tank-ammo-assembling-machine"},
     max_health = 150,
@@ -99,7 +99,7 @@ data:extend (
     --fast_replaceable_group = "assembling-machine",
     animation =
     {
-      filename = "__tanks__/graphics/entity/tank-assembling-machine/tank-assembling-machine.png",
+      filename = "__tanks_for_bob__/graphics/entity/tank-assembling-machine/tank-assembling-machine.png",
       priority = "high",
       width = 142,
       height = 113,
@@ -134,7 +134,7 @@ data:extend (
 	        width = 64,
 	        height = 64,
 	        frame_count = 64,
-		scale = 1.5,
+		      scale = 1.5,
 	        line_length = 8
 	      }
 	    },
@@ -148,7 +148,7 @@ data:extend (
 	    	amount = 1.50, 
 	    	type = "fire"
 	    }
-  	},
+  },
 	--massive-scorchmark
 	{
     type = "corpse",
@@ -330,7 +330,6 @@ data:extend (
     },
     action_frequency = 30
   },
- 
 --poison-cloud-2
   {
     type = "smoke-with-trigger",
@@ -384,6 +383,331 @@ data:extend (
     },
     action_frequency = 30
   },
- 
+--Iron wall
+  {
+    type = "wall",
+    name = "iron-wall",
+    icon = "__tanks_for_bob__/graphics/icons/iron-wall.png",
+    flags = {"placeable-neutral", "player-creation"},
+    collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+    minable = {mining_time = 1, result = "iron-wall"},
+    fast_replaceable_group = "wall",
+    max_health = 450,
+    repair_speed_modifier = 2,
+    corpse = "wall-remnants",
+    repair_sound = { filename = "__base__/sound/manual-repair-simple.ogg" },
+    mined_sound = { filename = "__base__/sound/deconstruct-bricks.ogg" },
+    vehicle_impact_sound =  { filename = "__base__/sound/car-stone-impact.ogg", volume = 1.0 },
+    -- this kind of code can be used for having walls mirror the effect
+    -- there can be multiple reaction items
+    --attack_reaction =
+    --{
+      --{
+        ---- how far the mirroring works
+        --range = 2,
+        ---- what kind of damage triggers the mirroring
+        ---- if not present then anything triggers the mirroring
+        --damage_type = "physical",
+        ---- caused damage will be multiplied by this and added to the subsequent damages
+        --reaction_modifier = 0.1,
+        --action =
+        --{
+          --type = "direct",
+          --action_delivery =
+          --{
+            --type = "instant",
+            --target_effects =
+            --{
+              --type = "damage",
+              ---- always use at least 0.1 damage
+              --damage = {amount = 0.1, type = "physical"}
+            --}
+          --}
+        --},
+      --}
+    --},
+    resistances =
+    {
+      {
+        type = "physical",
+        decrease = 3,
+        percent = 20
+      },
+      {
+        type = "impact",
+        decrease = 45,
+        percent = 60
+      },
+      {
+        type = "explosion",
+        decrease = 10,
+        percent = 30
+      },
+      {
+        type = "fire",
+        percent = 100
+      },
+      {
+        type = "laser",
+        percent = 70
+      }
+    },
+    pictures =
+    {
+      single =
+      {
+        layers =
+        {
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-single.png",
+            priority = "extra-high",
+            width = 22,
+            height = 42,
+            shift = {0, -0.15625}
+          },
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-single-shadow.png",
+            priority = "extra-high",
+            width = 47,
+            height = 32,
+            shift = {0.359375, 0.5},
+            draw_as_shadow = true
+          }
+        }
+      },
+      straight_vertical =
+      {
+        {
+          layers =
+          {
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-vertical-1.png",
+              priority = "extra-high",
+              width = 22,
+              height = 42,
+              shift = {0, -0.15625}
+            },
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-vertical-shadow.png",
+              priority = "extra-high",
+              width = 47,
+              height = 60,
+              shift = {0.390625, 0.625},
+              draw_as_shadow = true
+            }
+          }
+        },
+        {
+          layers =
+          {
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-vertical-2.png",
+              priority = "extra-high",
+              width = 22,
+              height = 42,
+              shift = {0, -0.15625}
+            },
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-vertical-shadow.png",
+              priority = "extra-high",
+              width = 47,
+              height = 60,
+              shift = {0.390625, 0.625},
+              draw_as_shadow = true
+            }
+          }
+        },
+        {
+          layers =
+          {
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-vertical-3.png",
+              priority = "extra-high",
+              width = 22,
+              height = 42,
+              shift = {0, -0.15625}
+            },
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-vertical-shadow.png",
+              priority = "extra-high",
+              width = 47,
+              height = 60,
+              shift = {0.390625, 0.625},
+              draw_as_shadow = true
+            }
+          }
+        }
+      },
+      straight_horizontal =
+      {
+        {
+          layers =
+          {
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-horizontal-1.png",
+              priority = "extra-high",
+              width = 32,
+              height = 42,
+              shift = {0, -0.15625}
+            },
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-horizontal-shadow.png",
+              priority = "extra-high",
+              width = 59,
+              height = 32,
+              shift = {0.421875, 0.5},
+              draw_as_shadow = true
+            }
+          }
+        },
+        {
+          layers =
+          {
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-horizontal-2.png",
+              priority = "extra-high",
+              width = 32,
+              height = 42,
+              shift = {0, -0.15625}
+            },
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-horizontal-shadow.png",
+              priority = "extra-high",
+              width = 59,
+              height = 32,
+              shift = {0.421875, 0.5},
+              draw_as_shadow = true
+            }
+          }
+        },
+        {
+          layers =
+          {
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-horizontal-3.png",
+              priority = "extra-high",
+              width = 32,
+              height = 42,
+              shift = {0, -0.15625}
+            },
+            {
+              filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-straight-horizontal-shadow.png",
+              priority = "extra-high",
+              width = 59,
+              height = 32,
+              shift = {0.421875, 0.5},
+              draw_as_shadow = true
+            }
+          }
+        }
+      },
+      corner_right_down =
+      {
+        layers =
+        {
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-corner-right-down.png",
+            priority = "extra-high",
+            width = 27,
+            height = 42,
+            shift = {0.078125, -0.15625}
+          },
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-corner-right-down-shadow.png",
+            priority = "extra-high",
+            width = 53,
+            height = 61,
+            shift = {0.484375, 0.640625},
+            draw_as_shadow = true
+          }
+        }
+      },
+      corner_left_down =
+      {
+        layers =
+        {
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-corner-left-down.png",
+            priority = "extra-high",
+            width = 27,
+            height = 42,
+            shift = {-0.078125, -0.15625}
+          },
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-corner-left-down-shadow.png",
+            priority = "extra-high",
+            width = 53,
+            height = 60,
+            shift = {0.328125, 0.640625},
+            draw_as_shadow = true
+          }
+        }
+      },
+      t_up =
+      {
+        layers =
+        {
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-t-down.png",
+            priority = "extra-high",
+            width = 32,
+            height = 42,
+            shift = {0, -0.15625}
+          },
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-t-down-shadow.png",
+            priority = "extra-high",
+            width = 71,
+            height = 61,
+            shift = {0.546875, 0.640625},
+            draw_as_shadow = true
+          }
+        }
+      },
+      ending_right =
+      {
+        layers =
+        {
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-ending-right.png",
+            priority = "extra-high",
+            width = 27,
+            height = 42,
+            shift = {0.078125, -0.15625}
+          },
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-ending-right-shadow.png",
+            priority = "extra-high",
+            width = 53,
+            height = 32,
+            shift = {0.484375, 0.5},
+            draw_as_shadow = true
+          }
+        }
+      },
+      ending_left =
+      {
+        layers =
+        {
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-ending-left.png",
+            priority = "extra-high",
+            width = 27,
+            height = 42,
+            shift = {-0.078125, -0.15625}
+          },
+          {
+            filename = "__tanks_for_bob__/graphics/entity/iron-wall/wall-ending-left-shadow.png",
+            priority = "extra-high",
+            width = 53,
+            height = 32,
+            shift = {0.328125, 0.5},
+            draw_as_shadow = true
+          }
+        }
+      }
+    }
+  },
 }
 )

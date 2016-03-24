@@ -386,7 +386,7 @@ data:extend(
     light = {intensity = 0.5, size = 5},
     animation =
     {
-      filename = "__tanks__/graphics/entity/tank-rocket/tank-rocket.png",
+      filename = "__tanks_for_bob__/graphics/entity/tank-rocket/tank-rocket.png",
       frame_count = 1,
       width = 10,
       height = 30,
@@ -394,7 +394,7 @@ data:extend(
     },
     shadow =
     {
-      filename = "__tanks__/graphics/entity/tank-rocket/tank-rocket-shadow.png",
+      filename = "__tanks_for_bob__/graphics/entity/tank-rocket/tank-rocket-shadow.png",
       frame_count = 1,
       width = 10,
       height = 30,
@@ -465,7 +465,7 @@ data:extend(
     light = {intensity = 0.7, size = 12},
     animation =
     {
-      filename = "__tanks__/graphics/icons/tank-ammo-wmd.png",
+      filename = "__tanks_for_bob__/graphics/icons/tank-ammo-wmd.png",
       frame_count = 1,
       width = 32,
       height = 32,

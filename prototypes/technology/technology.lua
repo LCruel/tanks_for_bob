@@ -1,9 +1,10 @@
 data:extend(
 { 
+  --modular-tank-research
   {
     type = "technology",
     name = "modular-tank-research",
-    icon = "__tanks__/graphics/icons/modular-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
     effects =
     {
       {
@@ -17,6 +18,10 @@ data:extend(
 	  {
         type = "unlock-recipe",
         recipe = "flame-thrower-ammo-tanker"
+      },
+	  {
+        type = "unlock-recipe",
+        recipe = "flame-thrower-ammo-tanker-2"
       },
 	  {
         type = "unlock-recipe",
@@ -68,11 +73,11 @@ data:extend(
     },
     order = "a-b-c"
   },
-  --2
+  --modular-tank-research2
   {
     type = "technology",
     name = "modular-tank-research2",
-    icon = "__tanks__/graphics/icons/modular-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
     effects =
     {
 	  {
@@ -101,10 +106,11 @@ data:extend(
     },
     order = "a-b-c"
   },
+  --modular-tank-research3
   {
     type = "technology",
     name = "modular-tank-research3",
-    icon = "__tanks__/graphics/icons/modular-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
     effects =
     {
 	  {
@@ -133,10 +139,11 @@ data:extend(
     },
     order = "a-b-c"
   },
+  --mechanized-infantry-research
   {
     type = "technology",
     name = "mechanized-infantry-research",
-    icon = "__tanks__/graphics/icons/mech-inf.png",
+    icon = "__tanks_for_bob__/graphics/icons/mech-inf.png",
     effects =
     {
   	  {
@@ -161,13 +168,14 @@ data:extend(
     },
     order = "a-b-c"
   }, 
-    {
+  --new-munitions
+  {
     type = "technology",
     name = "new-munitions",
-    icon = "__tanks__/graphics/icons/chemical-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/chemical-tank-research.png",
     effects =
     {
-	  {
+	   {
         type = "unlock-recipe",
         recipe = "50mm-mortar-poison"
       },
@@ -186,10 +194,11 @@ data:extend(
     },
     order = "a-b-c"
   },
-    {
+  --organic-explosives
+  {
     type = "technology",
     name = "organic-explosives",
-    icon = "__tanks__/graphics/icons/universal-explosive.png",
+    icon = "__tanks_for_bob__/graphics/icons/universal-explosive.png",
     effects =
     {
 	  {
@@ -206,10 +215,11 @@ data:extend(
     },
     order = "a-b-c"
   },
+  --super-tank-research
   {
     type = "technology",
     name = "super-tank-research",
-    icon = "__tanks__/graphics/icons/super-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank-research.png",
     effects =
     {
 	  {
@@ -230,10 +240,11 @@ data:extend(
     },
     order = "a-b-c"
   },
+  --super-tank-research2
   {
     type = "technology",
     name = "super-tank-research2",
-    icon = "__tanks__/graphics/icons/super-tank-research.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank-research.png",
     effects =
     {
 	  {
@@ -250,6 +261,27 @@ data:extend(
     {
       count = 100,
       ingredients = {{"science-pack-1", 12}, {"science-pack-2", 6}, {"science-pack-3", 5}},
+      time = 15
+    },
+    order = "a-b-c"
+  },
+--Iron wall
+  {
+    type = "technology",
+    name = "iron-walls",
+    icon = "__tanks_for_bob__/graphics/icons/iron-wall-research.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "iron-walls"
+      },
+    },
+    prerequisites = { "stone-walls"},
+    unit =
+    {
+      count = 50,
+      ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}},
       time = 15
     },
     order = "a-b-c"

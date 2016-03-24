@@ -1,10 +1,10 @@
 
 {
   "name": "tanks_for_bob",
-  "version": "1.0",
+  "version": "1.3.0",
   "title": "Tanks! and now also for Bob!!",
   "author": "LCruel, orginal author: KONAir, ",
   "homepage": "none",
-  "description": "Tanks! adds additional tanks with various weapons and munitions!",
+  "description": "Tanks! for Bob!, this mod brings in stronger tanks you need if you want a player to have more influence on the map while playing with \"Bob's enamies\" and \"Natural Evolution Expansion\" mods.",
   "dependencies": ["base >= 0.12.11"]
 }

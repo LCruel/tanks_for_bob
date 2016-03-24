@@ -3,7 +3,7 @@ data:extend(
   {
     type = "item",
     name = "flame-tank",
-    icon = "__tanks__/graphics/icons/flame-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/flame-tank.png",
     flags = {"goes-to-quickbar"},
     subgroup = "tank-vehicle",
     order = "b[battle-tank]-a[flame-tank]",
@@ -13,7 +13,7 @@ data:extend(
   {
     type = "item",
     name = "auto-tank",
-    icon = "__tanks__/graphics/icons/auto-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/auto-tank.png",
     flags = {"goes-to-quickbar"},
     subgroup = "tank-vehicle",
     order = "b[battle-tank]-a[flame-tank]",
@@ -23,7 +23,7 @@ data:extend(
   {
     type = "item",
     name = "nade-tank",
-    icon = "__tanks__/graphics/icons/nade-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/nade-tank.png",
     flags = {"goes-to-quickbar"},
     subgroup = "tank-vehicle",
     order = "b[battle-tank]-a[flame-tank]",
@@ -33,7 +33,7 @@ data:extend(
   {
     type = "item",
     name = "flame-tank-wlsk",
-    icon = "__tanks__/graphics/icons/flame-tank-wlsk.png",
+    icon = "__tanks_for_bob__/graphics/icons/flame-tank-wlsk.png",
     flags = {"goes-to-quickbar"},
     subgroup = "tank-vehicle-upgrades",
     order = "a[tank-vehicle-upgrades]-a[flame-tank]",
@@ -43,7 +43,7 @@ data:extend(
   {
     type = "item",
     name = "auto-tank-wlsk",
-    icon = "__tanks__/graphics/icons/auto-tank-wlsk.png",
+    icon = "__tanks_for_bob__/graphics/icons/auto-tank-wlsk.png",
     flags = {"goes-to-quickbar"},
     subgroup = "tank-vehicle-upgrades",
     order = "a[tank-vehicle-upgrades]-a[flame-tank]",
@@ -53,7 +53,7 @@ data:extend(
   {
     type = "item",
     name = "nade-tank-wlsk",
-    icon = "__tanks__/graphics/icons/nade-tank-wlsk.png",
+    icon = "__tanks_for_bob__/graphics/icons/nade-tank-wlsk.png",
     flags = {"goes-to-quickbar"},
     subgroup = "tank-vehicle-upgrades",
     order = "a[tank-vehicle-upgrades]-a[flame-tank]",
@@ -63,7 +63,7 @@ data:extend(
   {
     type = "item",
     name = "mine-tank",
-    icon = "__tanks__/graphics/icons/mine-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/mine-tank.png",
     flags = {"goes-to-quickbar"},
     subgroup = "support-vehicles",
     order = "b[support-vehicles]-a[mine-tank]",
@@ -73,7 +73,7 @@ data:extend(
   {
     type = "item",
     name = "rocket-tank",
-    icon = "__tanks__/graphics/icons/rocket-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/rocket-tank.png",
     flags = {"goes-to-quickbar"},
     subgroup = "support-vehicles",
     order = "b[support-vehicles]-a[mine-tank]",
@@ -84,7 +84,7 @@ data:extend(
   {
     type = "item",
     name = "super-tank",
-    icon = "__tanks__/graphics/icons/super-tank.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank.png",
     flags = {"goes-to-quickbar"},
     subgroup = "super-tank-vehicle",
     order = "b[super-tank-vehicle]-a[super-tank]",
@@ -94,7 +94,7 @@ data:extend(
   {
     type = "item",
     name = "super-tank-alternate",
-    icon = "__tanks__/graphics/icons/super-tank-alternate.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank-alternate.png",
     flags = {"goes-to-quickbar"},
     subgroup = "super-tank-vehicle",
     order = "b[super-tank]-a[super-tank]",
@@ -104,7 +104,7 @@ data:extend(
   {
     type = "item",
     name = "super-tank-wmd",
-    icon = "__tanks__/graphics/icons/super-tank-wmd.png",
+    icon = "__tanks_for_bob__/graphics/icons/super-tank-wmd.png",
     flags = {"goes-to-quickbar"},
     subgroup = "super-tank-vehicle",
     order = "b[super-tank]-a[super-tank]",
@@ -114,7 +114,7 @@ data:extend(
   {
     type = "item",
     name = "car-flamer",
-    icon = "__tanks__/graphics/icons/car-flamer.png",
+    icon = "__tanks_for_bob__/graphics/icons/car-flamer.png",
     flags = {"goes-to-quickbar"},
     subgroup = "support-vehicles",
     order = "b[support-vehicles]-a[mine-tank]",

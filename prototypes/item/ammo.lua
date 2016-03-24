@@ -4,7 +4,7 @@ data:extend(
 	{
     type = "ammo",
     name = "piercing-shotgun-shell-brick",
-    icon = "__tanks__/graphics/icons/shell-brick.png",
+    icon = "__tanks_for_bob__/graphics/icons/shell-brick.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -39,7 +39,7 @@ data:extend(
 	{
     type = "ammo",
     name = "ap-bullet-brick",
-    icon = "__tanks__/graphics/icons/bullet-brick.png",
+    icon = "__tanks_for_bob__/graphics/icons/bullet-brick.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -78,7 +78,7 @@ data:extend(
 	{
     type = "ammo",
     name = "flame-thrower-ammo-tanker",
-    icon = "__tanks__/graphics/icons/flame-thrower-ammo-tanker.png",
+    icon = "__tanks_for_bob__/graphics/icons/flame-thrower-ammo-tanker.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -89,17 +89,95 @@ data:extend(
         type = "direct",
         action_delivery =
         {
-          {
-            type = "flame-thrower",
-            explosion = "tank-flame-thrower-explosion",
-            direction_deviation = 0.07,
-            speed_deviation = 0.1,
-            starting_frame_deviation = 0.07,
-            projectile_starting_speed = 0.2,
-            starting_distance = 0.6,
-          }
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 0.07,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
         }
       }
+    },
+    magazine_size = 500,
+    subgroup = "tank-ammo",
+    order = "b[tank-ammo]",
+    stack_size = 10
+  },
+--flame-thrower-ammo-tanker-2
+	{
+    type = "ammo",
+    name = "flame-thrower-ammo-tanker-2",
+    icon = "__tanks_for_bob__/graphics/icons/flame-thrower-ammo-tanker.png",
+    flags = {"goes-to-main-inventory"},
+    ammo_type =
+    {
+      category = "tank-spray-ammo-2",
+      target_type = "direction",
+      action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+			{
+				type = "flame-thrower",
+				explosion = "tank-flame-thrower-explosion",
+				direction_deviation = 1.0,
+				speed_deviation = 0.1,
+				starting_frame_deviation = 0.07,
+				projectile_starting_speed = 0.2,
+				starting_distance = 0.6,
+			},	
+        }		
+      }
+	  
     },
     magazine_size = 500,
     subgroup = "tank-ammo",
@@ -110,7 +188,7 @@ data:extend(
 	{
     type = "ammo",
     name = "45mm-auto",
-    icon = "__tanks__/graphics/icons/cannon-auto-ammo.png",
+    icon = "__tanks_for_bob__/graphics/icons/cannon-auto-ammo.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -135,7 +213,7 @@ data:extend(
         }
       },
     },
-    magazine_size = 3,
+    magazine_size = 12,
     subgroup = "tank-ammo",
     order = "a[tank-ammo]",
     stack_size = 100
@@ -144,7 +222,7 @@ data:extend(
 	{
     type = "ammo",
     name = "50mm-mortar",
-    icon = "__tanks__/graphics/icons/nade_tank_ammo.png",
+    icon = "__tanks_for_bob__/graphics/icons/nade_tank_ammo.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -178,7 +256,7 @@ data:extend(
 	{
     type = "ammo",
     name = "50mm-mortar-poison",
-    icon = "__tanks__/graphics/icons/nade_tank_ammo-poison.png",
+    icon = "__tanks_for_bob__/graphics/icons/nade_tank_ammo-poison.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -212,7 +290,7 @@ data:extend(
 	{
     type = "ammo",
     name = "minepack",
-    icon = "__tanks__/graphics/icons/mine-pack.png",
+    icon = "__tanks_for_bob__/graphics/icons/mine-pack.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -246,7 +324,7 @@ data:extend(
 	{
     type = "ammo",
     name = "minepack-poison",
-    icon = "__tanks__/graphics/icons/mine-pack-poison.png",
+    icon = "__tanks_for_bob__/graphics/icons/mine-pack-poison.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -280,7 +358,7 @@ data:extend(
   	{
     type = "ammo",
     name = "rocketpack",
-    icon = "__tanks__/graphics/icons/rocket-pack.png",
+    icon = "__tanks_for_bob__/graphics/icons/rocket-pack.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -310,7 +388,7 @@ data:extend(
   {
     type = "ammo",
     name = "cannon-shell-2",
-    icon = "__tanks__/graphics/icons/tank-ammo-shell2.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-ammo-shell2.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -343,7 +421,7 @@ data:extend(
   {
     type = "ammo",
     name = "tank-wmd-ammo",
-    icon = "__tanks__/graphics/icons/tank-ammo-wmd.png",
+    icon = "__tanks_for_bob__/graphics/icons/tank-ammo-wmd.png",
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {

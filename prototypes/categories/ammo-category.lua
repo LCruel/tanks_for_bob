@@ -9,6 +9,10 @@ data:extend(
     name = "tank-spray-ammo"
 	},
 	{
+    type = "ammo-category",
+    name = "tank-spray-ammo-2"
+	},
+	{
 	type = "ammo-category",
     name = "tank-nade-ammo"
 	},
