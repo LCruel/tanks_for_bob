@@ -12,10 +12,10 @@ data:extend(
     {
       type = "projectile",
       ammo_category = "cannon-shell",
-      cooldown = 90,
+      cooldown = 40,
       movement_slow_down_factor = 0,
       projectile_creation_distance = 0.6,
-      range = 35,
+      range = 50,
       sound =
       {
         {
@@ -75,8 +75,8 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-	  ammo_category = "auto-cannon-ammo",
-      cooldown = 17,
+	    ammo_category = "auto-cannon-ammo",
+      cooldown = 14,
       movement_slow_down_factor = 0,
       projectile_creation_distance = 0.6,
       range = 25,
@@ -101,21 +101,21 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-	  ammo_category = "tank-nade-ammo",
-      cooldown = 120,
+	    ammo_category = "tank-nade-ammo",
+      cooldown = 60,
       movement_slow_down_factor = 0.2,
       projectile_creation_distance = 2,
-      range = 500,
+      range = 200,
       sound =
       {
         {
-          filename = "__base__/sound/fight/tank-cannon.ogg",
+          filename = "__tanks_for_bob_dev__/sound/fight/heavy-artillery-3.ogg",
           volume = 1
         }
       }
     },
     stack_size = 1
-    },
+  },
 --tank-mine-cannon
 	{
     type = "gun",

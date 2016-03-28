@@ -1,3 +1,7 @@
+local function test()
+  game.player.print("Hello Daniel")
+end
+
 data:extend(
 {
  --50mm-Mortar
@@ -5,7 +9,7 @@ data:extend(
     type = "projectile",
     name = "50mm-projectile",
     flags = {"not-on-map"},
-    acceleration = 0.015,
+    acceleration = 0.0,
     action =
     {
       {
@@ -16,18 +20,19 @@ data:extend(
           target_effects =
           {
             {
-            type = "create-entity",
-            entity_name = "explosion"
+              type = "create-entity",
+              entity_name = "big-explosion",
+              offset_deviation = { {-4,-4},{4,4}}
             },
             {
-            type = "create-entity",
-            entity_name = "small-scorchmark",
-            check_buildability = true
+              type = "create-entity",
+              entity_name = "small-scorchmark",
+              check_buildability = true
             },
-			{
-            type = "create-sticker",
-			sticker = "slowdown-sticker"
-			},
+        		{
+              type = "create-sticker",
+        		  	sticker = "slowdown-sticker"
+      			},
           }
         }
       },
@@ -40,21 +45,17 @@ data:extend(
           target_effects =
           {
             {
-            type = "damage",
-            damage = {amount = 350, type = "explosion"}
+              type = "damage",
+              damage = {amount = 350, type = "explosion"}
             },
-            {
-            type = "create-entity",
-            entity_name = "explosion"
-            }
           }
         }
       }
     },
-    light = {intensity = 0.5, size = 4},
+    light = {intensity = 0.5, size = 8},
     animation =
     {
-      filename = "__base__/graphics/entity/bullet/bullet.png",
+      filename = "__tanks_for_bob_dev__/graphics/entity/bullet-artillery/bullet-artillery.png",
       frame_count = 1,
       width = 3,
       height = 50,
@@ -164,15 +165,15 @@ data:extend(
     action =
     {
       {
-	  type = "direct",
+	      type = "direct",
         action_delivery =
-      {
+        {
           type = "instant",
-		  target_effects =
+		      target_effects =
           {
-			{
-            type = "create-entity",
-            entity_name = "land-mine-poison"
+			      {
+              type = "create-entity",
+              entity_name = "land-mine-poison"
             },
           }
        }
@@ -195,49 +196,49 @@ data:extend(
     collision_box = {{-0.05, -1.1}, {0.05, 1.1}},
     acceleration = 0,
     direction_only = true,
-    piercing_damage = 200,
+    piercing_damage = 4000,
     action =
     {
-		{
-		  type = "direct",
-		  action_delivery =
-		  {
-			type = "instant",
-			target_effects =
-			{
-				{
-					type = "create-entity",
-					entity_name = "explosion"
-				},
-				{
-					type = "create-entity",
-					entity_name = "small-scorchmark",
-					check_buildability = true
-				},
-				{
-					type = "damage",
-					damage = { amount = 200 , type = "physical"}
-				},
-			}
-		  }
-		},
-		{
-			type = "area",
-			perimeter = 2,
-			action_delivery =
-			{
-				type = "instant",
-				target_effects =
-				{
-					{
-						type = "damage",
-						damage = {amount = 75, type = "explosion"}
-					}
-				}
-			}
-        }
-    }
-	,
+  		{
+  		  type = "direct",
+  		  action_delivery =
+  		  {
+    			type = "instant",
+    			target_effects =
+    			{
+            {
+              type = "create-entity",
+              entity_name = "explosion-gunshot",
+              --offset_deviation = {{-2, -2}, {2, 2}}
+            },
+    				--{
+    				--	type = "create-entity",
+    				--	entity_name = "small-scorchmark",
+    				--	check_buildability = true
+    				--},
+    				{
+    					type = "damage",
+    					damage = { amount = 350 , type = "physical"}
+    				},
+    			}
+  		  }
+  		}--,
+  		--{
+  		--	type = "area",
+  		--	perimeter = 2,
+  		--	action_delivery =
+  		--	{
+  		--		type = "instant",
+  		--		target_effects =
+  		--		{
+  		--			{
+  		--				type = "damage",
+  		--				damage = {amount = 75, type = "explosion"}
+  		--			}
+  		--		}
+  		--	}
+      --}
+    },
     final_action =
     {
       type = "direct",

@@ -206,10 +206,10 @@ data:extend(
         {
           type = "projectile",
           projectile = "45mm-projectile",
-          starting_speed = 1,
+          starting_speed = 3,
           direction_deviation = 0.1,
           range_deviation = 0.1,
-          max_range = 30
+          max_range = 25
         }
       },
     },
@@ -238,12 +238,46 @@ data:extend(
         type = "direct",
         action_delivery =
         {
-          type = "projectile",
-          projectile = "50mm-projectile",
-          starting_speed = 1,
-          direction_deviation = 0.3,
-          range_deviation = 0.3,
-          max_range = 750
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 200.
+          },
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 200.
+          },
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 200.
+          },
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 200.
+          },
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 200.
+          }
         }
       },
     },
@@ -397,7 +431,7 @@ data:extend(
       source_effects =
       {
         type = "create-entity",
-        entity_name = "explosion-gunshot"
+        entity_name = "medium-explosion"
       },
       action =
       {

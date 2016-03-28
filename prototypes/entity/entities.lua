@@ -1,7 +1,8 @@
 
+
 data:extend (
 {
-	--tank-assembly
+--tank-assembly
 	{
     type = "assembling-machine",
     name = "tank-assembling-machine",
@@ -60,7 +61,7 @@ data:extend (
     module_slots = 4,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
-	--munition maker
+--munition maker
 	{
     type = "assembling-machine",
     name = "tank-ammo-assembling-machine",
@@ -120,7 +121,7 @@ data:extend (
     module_slots = 1,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
-	--tank-flame-thrower-explosion
+--tank-flame-thrower-explosion
 	{
 	    type = "flame-thrower-explosion",
 	    name = "tank-flame-thrower-explosion",
@@ -149,7 +150,7 @@ data:extend (
 	    	type = "fire"
 	    }
   },
-	--massive-scorchmark
+--massive-scorchmark
 	{
     type = "corpse",
     name = "massive-scorchmark",
@@ -205,8 +206,8 @@ data:extend (
       }
     }
   },
-	--land-mine-poison
-  	{
+--land-mine-poison
+  {
     type = "land-mine",
     name = "land-mine-poison",
     icon = "__base__/graphics/icons/land-mine.png",
@@ -258,7 +259,7 @@ data:extend (
               {
                 type = "instant",
                 target_effects = 
-				{
+				        {
                   type = "damage",
                   damage = { amount = 20, type = "explosion"}
                 },
@@ -266,19 +267,19 @@ data:extend (
             },
           },
           {
-		type = "create-entity",
-		entity_name = "poison-cloud"
+        		type = "create-entity",
+        		entity_name = "poison-cloud"
           },
           {
-		type = "damage",
-		damage = { amount = 500, type = "explosion"}
+        		type = "damage",
+        		damage = { amount = 500, type = "explosion"}
           }
         }
       }
     },
   },
-	--lazer-cloud
-  	{
+--lazer-cloud
+  {
     type = "smoke",
     name = "lazer-cloud",
     flags = {"not-on-map"},
@@ -710,4 +711,5 @@ data:extend (
     }
   },
 }
+
 )
