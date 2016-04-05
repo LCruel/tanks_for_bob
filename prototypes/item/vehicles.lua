@@ -43,7 +43,7 @@ data:extend(
   {
     type = "item",
     name = "auto-tank-wlsk",
-    icon = "__tanks_for_bob_dev__/graphics/icons/auto-tank-lvl2.png",
+    icon = "__tanks_for_bob__/graphics/icons/auto-tank-lvl2.png",
     flags = {"goes-to-quickbar"},
     subgroup = "tank-vehicle-upgrades",
     order = "a[tank-vehicle-upgrades]-a[flame-tank]",

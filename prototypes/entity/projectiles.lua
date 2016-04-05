@@ -55,7 +55,7 @@ data:extend(
     light = {intensity = 0.5, size = 8},
     animation =
     {
-      filename = "__tanks_for_bob_dev__/graphics/entity/bullet-artillery/bullet-artillery.png",
+      filename = "__tanks_for_bob__/graphics/entity/bullet-artillery/bullet-artillery.png",
       frame_count = 1,
       width = 3,
       height = 50,

@@ -848,7 +848,7 @@ data:extend(
   {
     type = "car",
     name = "auto-tank-wlsk",
-    icon = "__tanks_for_bob_dev__/graphics/icons/auto-tank-lvl2.png",
+    icon = "__tanks_for_bob__/graphics/icons/auto-tank-lvl2.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "auto-tank-wlsk"},
     max_health = 1750,
