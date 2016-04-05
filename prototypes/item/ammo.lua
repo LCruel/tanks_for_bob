@@ -89,15 +89,15 @@ data:extend(
         type = "direct",
         action_delivery =
         {
-			{
-				type = "flame-thrower",
-				explosion = "tank-flame-thrower-explosion",
-				direction_deviation = 0.07,
-				speed_deviation = 0.1,
-				starting_frame_deviation = 0.07,
-				projectile_starting_speed = 0.2,
-				starting_distance = 0.6,
-			},	
+    			{
+    				type = "flame-thrower",
+    				explosion = "tank-flame-thrower-explosion",
+    				direction_deviation = 0.07,
+    				speed_deviation = 0.1,
+    				starting_frame_deviation = 0.07,
+    				projectile_starting_speed = 0.2,
+    				starting_distance = 0.6,
+    			},	
         }
       }
     },

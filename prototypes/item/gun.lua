@@ -83,7 +83,7 @@ data:extend(
       sound =
       {
         {
-          filename = "__base__/sound/fight/tank-cannon.ogg",
+          filename = "__tanks_for_bob_dev__/sound/fight/auto-cannon.ogg",
           volume = 0.5
         }
       }
