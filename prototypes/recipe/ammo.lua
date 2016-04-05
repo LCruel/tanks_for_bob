@@ -9,9 +9,9 @@ data:extend(
     energy_required = 10,
     ingredients =
     {
-      {"tank-ammo-universal-casing", 2},
-      {"tank-ammo-universal-explosive", 1},
-	  {"flame-thrower-ammo", 5}
+       {"tank-ammo-universal-casing", 2},
+       {"tank-ammo-universal-explosive", 1},
+	     {"flame-thrower-ammo", 5}
     },
     result = "flame-thrower-ammo-tanker",
   },
@@ -20,7 +20,7 @@ data:extend(
     type = "recipe",
     name = "flame-thrower-ammo-tanker-2",
     enabled = "false",
-	category = "tank-ammo-component",
+	  category = "tank-ammo-component",
     energy_required = 10,
     ingredients =
     {

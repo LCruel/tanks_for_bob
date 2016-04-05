@@ -36,12 +36,37 @@ data:extend(
     order = "e[flame-thrower]",
     attack_parameters =
     {
-		type = "projectile",
-		ammo_category = "tank-spray-ammo",
-		cooldown = 1,
-		movement_slow_down_factor = 0.6,
-		projectile_creation_distance = 0.7,
-		range = 12
+  		type = "projectile",
+  		ammo_category = "tank-spray-ammo",
+  		cooldown = 1,
+  		movement_slow_down_factor = 0.6,
+  		projectile_creation_distance = 0.7,
+  		range = 12,
+
+      cyclic_sound =
+      {
+        begin_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-start.ogg",
+            volume = 0.7
+          }
+        },
+        middle_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-mid.ogg",
+            volume = 0.7
+          }
+        },
+        end_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-end.ogg",
+            volume = 0.7
+          }
+        }
+      }
     },
     stack_size = 1
   },
@@ -55,12 +80,36 @@ data:extend(
     order = "e[flame-thrower]",
     attack_parameters =
     {
-		type = "projectile",
-		ammo_category = "tank-spray-ammo-2",
-		cooldown = 1,
-		movement_slow_down_factor = 0.6,
-		projectile_creation_distance = 0.7,
-		range = 12
+  		type = "projectile",
+  		ammo_category = "tank-spray-ammo-2",
+  		cooldown = 1,
+  		movement_slow_down_factor = 0.6,
+  		projectile_creation_distance = 0.7,
+  		range = 12,
+      cyclic_sound =
+      {
+        begin_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-start.ogg",
+            volume = 0.7
+          }
+        },
+        middle_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-mid.ogg",
+            volume = 0.7
+          }
+        },
+        end_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-end.ogg",
+            volume = 0.7
+          }
+        }
+      }
     },
     stack_size = 1
   },
@@ -127,7 +176,7 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-	  ammo_category = "tank-mine-ammo",
+	    ammo_category = "tank-mine-ammo",
       cooldown = 30,
       movement_slow_down_factor = 0.2,
       projectile_creation_distance = 2,

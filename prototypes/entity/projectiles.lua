@@ -87,14 +87,14 @@ data:extend(
             check_buildability = true
             },
             {
-            type = "create-entity",
-			entity_name = "poison-cloud-2"
-			--entity_name = "lazer-cloud"
+               type = "create-entity",
+			         entity_name = "poison-cloud-2"
+			         --entity_name = "lazer-cloud"
             },
-			{
-            type = "create-sticker",
-			sticker = "slowdown-sticker"
-			},
+      			{
+                  type = "create-sticker",
+      			sticker = "slowdown-sticker"
+      			},
           }
         }
       },

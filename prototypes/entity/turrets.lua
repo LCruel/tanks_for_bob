@@ -1,5 +1,6 @@
 data:extend(
 {
+  -- shell-turret
   {
     type = "shell-turret",
     name = "gun-turret",
