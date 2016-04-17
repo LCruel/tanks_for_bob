@@ -290,6 +290,27 @@ data:extend(
     },
     order = "a-b-c"
   },
+--Iron wall
+  {
+    type = "technology",
+    name = "auto-cannon-turret",
+    icon = "__base__/graphics/icons/gun-turret.png",
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "auto-cannon-turret"
+      },
+    },
+    prerequisites = { "modular-tank-research"},
+    unit =
+    {
+      count = 50,
+      ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}},
+      time = 15
+    },
+    order = "a-b-c"
+  },
 }
 )
 
