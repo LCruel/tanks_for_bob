@@ -48,7 +48,7 @@ data:extend(
     type = "recipe",
     name = "iron-walls",
     enabled = "false",
-    energy_required = "20",
+    energy_required = "5",
     ingredients = 
     {
       {"iron-plate", 4},
@@ -60,55 +60,72 @@ data:extend(
     },
   },
 -- ammo components
-    {
+-- name = "tank-ammo-universal-explosive",
+  {
     type = "recipe",
     name = "tank-ammo-universal-explosive",
     enabled = "false",
-	category = "tank-ammo-component",
+    category = "tank-ammo-component",
     energy_required = 5,
     ingredients =
     {
       {"plastic-bar", 7},
-	  {"explosives", 12}
+      {"explosives", 12}
     },
     results=
     {
       {type="item", name="tank-ammo-universal-explosive", amount=3},
     },
-    },
-    {
+  },
+--     name = "tank-ammo-universal-explosive-synthetic",
+  {
     type = "recipe",
     name = "tank-ammo-universal-explosive-synthetic",
     enabled = "false",
-	category = "tank-ammo-component",
+    category = "tank-ammo-component",
     energy_required = 60,
     ingredients =
     {
       {"raw-wood", 100},
-	  {"stone", 100}
+      {"stone", 100}
     },
     results=
     {
       {type="item", name="tank-ammo-universal-explosive", amount=9},
     },
-    },
-	
-    {
+  },
+--    name = "tank-ammo-casing",	
+  {
     type = "recipe",
-    name = "tank-ammo-universal-casing",
+    name = "tank-ammo-casing",
     enabled = "false",
-	category = "tank-ammo-component",
-    energy_required = 5,
+    category = "tank-ammo-component",
+    energy_required = 0.5,
     ingredients =
     {
-      {"steel-plate", 7},
-      {"copper-plate", 12}
+      {"copper-plate", 1},
     },
     results=
     {
-      {type="item", name="tank-ammo-universal-casing", amount=3},
+      {type="item", name="tank-ammo-casing", amount=1},
     },
+  },
+--    name = "tank-ammo-reinforced-casing",  
+  {
+    type = "recipe",
+    name = "tank-ammo-reinforced-casing",
+    enabled = "false",
+    category = "tank-ammo-component",
+    energy_required = 2,
+    ingredients =
+    {
+      {"steel-plate", 1},
     },
+    results=
+    {
+      {type="item", name="tank-ammo-reinforced-casing", amount=1},
+    },
+  },
 -- extras
     {
       type = "recipe",

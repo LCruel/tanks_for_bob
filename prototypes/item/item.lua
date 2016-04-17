@@ -22,24 +22,33 @@ data:extend(
     stack_size = 50
   },
   {
-    type = "item",
-    name = "tank-light-chasis-wlsk",
-    icon = "__tanks_for_bob__/graphics/icons/tank-light-chasis-wlsk.png",
-    flags = {"goes-to-main-inventory"},
-    subgroup = "tank-vehicle-upgrades",
-	order = "a[tank-vehicle-upgrades]-a[tank-light-chasis-wlsk]",
-    stack_size = 1
+     type = "item",
+     name = "tank-light-chasis-wlsk",
+     icon = "__tanks_for_bob__/graphics/icons/tank-light-chasis-wlsk.png",
+     flags = {"goes-to-main-inventory"},
+     subgroup = "tank-vehicle-upgrades",
+	   order = "a[tank-vehicle-upgrades]-a[tank-light-chasis-wlsk]",
+     stack_size = 1
   },
 --Tank Ammo Components
 	{
     type = "item",
-    name = "tank-ammo-universal-casing",
-    icon = "__tanks_for_bob__/graphics/icons/universal-casing.png",
+    name = "tank-ammo-casing",
+    icon = "__tanks_for_bob__/graphics/icons/casing.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "tank-ammo-components",
-    order = "a[tank-ammo-components]-a[universal-casing]",
+    order = "a[tank-ammo-components]-a[casing]",
     stack_size = 100
 	},
+  {
+    type = "item",
+    name = "tank-ammo-reinforced-casing",
+    icon = "__tanks_for_bob__/graphics/icons/reinforce-casing.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "tank-ammo-components",
+    order = "a[tank-ammo-components]-a[reinforce-casing]",
+    stack_size = 100
+  },
 	{
     type = "item",
     name = "tank-ammo-universal-explosive",
@@ -73,7 +82,7 @@ data:extend(
       attack_parameters =
       {
         type = "projectile",
-		ammo_category = "capsule",
+		    ammo_category = "capsule",
         cooldown = 10,
         range = 0,
         ammo_type =

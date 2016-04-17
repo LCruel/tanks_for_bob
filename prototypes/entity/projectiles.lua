@@ -29,10 +29,10 @@ data:extend(
               entity_name = "small-scorchmark",
               check_buildability = true
             },
-        		{
+            {
               type = "create-sticker",
-        		  	sticker = "slowdown-sticker"
-      			},
+                sticker = "slowdown-sticker"
+            },
           }
         }
       },
@@ -88,13 +88,13 @@ data:extend(
             },
             {
                type = "create-entity",
-			         entity_name = "poison-cloud-2"
-			         --entity_name = "lazer-cloud"
+               entity_name = "poison-cloud-2"
+               --entity_name = "lazer-cloud"
             },
-      			{
+            {
                   type = "create-sticker",
-      			sticker = "slowdown-sticker"
-      			},
+            sticker = "slowdown-sticker"
+            },
           }
         }
       },
@@ -133,13 +133,13 @@ data:extend(
     action =
     {
       {
-	  type = "direct",
+    type = "direct",
         action_delivery =
       {
           type = "instant",
-		  target_effects =
+      target_effects =
           {
-			{
+      {
             type = "create-entity",
             entity_name = "land-mine"
             },
@@ -165,13 +165,13 @@ data:extend(
     action =
     {
       {
-	      type = "direct",
+        type = "direct",
         action_delivery =
         {
           type = "instant",
-		      target_effects =
+          target_effects =
           {
-			      {
+            {
               type = "create-entity",
               entity_name = "land-mine-poison"
             },
@@ -199,61 +199,24 @@ data:extend(
     piercing_damage = 4000,
     action =
     {
-  		{
-  		  type = "direct",
-  		  action_delivery =
-  		  {
-    			type = "instant",
-    			target_effects =
-    			{
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "instant",
+          target_effects =
+          {
             {
               type = "create-entity",
-              entity_name = "explosion-gunshot",
-              --offset_deviation = {{-2, -2}, {2, 2}}
+              entity_name = "auto-cannon-hit",
             },
-    				--{
-    				--	type = "create-entity",
-    				--	entity_name = "small-scorchmark",
-    				--	check_buildability = true
-    				--},
-    				{
-    					type = "damage",
-    					damage = { amount = 350 , type = "physical"}
-    				},
-    			}
-  		  }
-  		}--,
-  		--{
-  		--	type = "area",
-  		--	perimeter = 2,
-  		--	action_delivery =
-  		--	{
-  		--		type = "instant",
-  		--		target_effects =
-  		--		{
-  		--			{
-  		--				type = "damage",
-  		--				damage = {amount = 75, type = "explosion"}
-  		--			}
-  		--		}
-  		--	}
-      --}
-    },
-    final_action =
-    {
-      type = "direct",
-      action_delivery =
-      {
-        type = "instant",
-        target_effects =
-        {
-          {
-            type = "create-entity",
-            entity_name = "small-scorchmark",
-            check_buildability = true
+            {
+              type = "damage",
+              damage = { amount = 350 , type = "physical"}
+            },
           }
         }
-      }
+       }
     },
     animation =
     {
@@ -272,49 +235,48 @@ data:extend(
     collision_box = {{-0.05, -1.1}, {0.05, 1.1}},
     acceleration = 0,
     direction_only = true,
-    piercing_damage = 400,
+    piercing_damage = 0,
     action =
     {
-		{
-		  type = "direct",
-		  action_delivery =
-		  {
-			type = "instant",
-			target_effects =
-			{
-				{
-					type = "create-entity",
-					entity_name = "big-explosion"
-				},
-				{
-					type = "create-entity",
-					entity_name = "small-scorchmark",
-					check_buildability = true
-				},
-				{
-					type = "damage",
-					damage = { amount = 500 , type = "physical"}
-				}
-			}
-		  }
-		},
-		{
-			type = "area",
-			perimeter = 4,
-			action_delivery =
-			{
-				type = "instant",
-				target_effects =
-				{
-					{
-						type = "damage",
-						damage = {amount = 350, type = "explosion"}
-					}
-				}
-			}
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "instant",
+          target_effects =
+          {
+            {
+              type = "create-entity",
+              entity_name = "big-explosion"
+            },
+            {
+              type = "create-entity",
+              entity_name = "small-scorchmark",
+              check_buildability = true
+            },
+            {
+              type = "damage",
+              damage = { amount = 500 , type = "physical"}
+            }
+          }
         }
-    }
-	,
+      },
+      {
+        type = "area",
+        perimeter = 4,
+        action_delivery =
+        {
+          type = "instant",
+          target_effects =
+          {
+            {
+              type = "damage",
+              damage = {amount = 350, type = "explosion"}
+            }
+          }
+        }
+      }
+    },
     final_action =
     {
       type = "direct",
@@ -470,7 +432,7 @@ data:extend(
       frame_count = 1,
       width = 32,
       height = 32,
-	  scale = 1,
+    scale = 1,
       priority = "high"
     },
   },

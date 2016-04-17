@@ -14,36 +14,40 @@ data:extend(
       {
         type = "unlock-recipe",
         recipe = "tank-ammo-assembling-machine"
-      },	  
-	  {
+      },    
+      {
         type = "unlock-recipe",
         recipe = "flame-thrower-ammo-tanker"
       },
-	  {
+      {
         type = "unlock-recipe",
         recipe = "flame-thrower-ammo-tanker-2"
       },
-	  {
+      {
         type = "unlock-recipe",
-        recipe = "tank-ammo-universal-casing"
+        recipe = "tank-ammo-casing"
       },
-	  {
+      {
+        type = "unlock-recipe",
+        recipe = "tank-ammo-reinforced-casing"
+      },      
+      {
         type = "unlock-recipe",
         recipe = "tank-ammo-universal-explosive"
       },
-	  {
+     {
         type = "unlock-recipe",
         recipe = "45mm-auto"
       },
-	  {
+     {
         type = "unlock-recipe",
         recipe = "50mm-mortar"
       },
-	  {
+     {
         type = "unlock-recipe",
         recipe = "cannon-shell-2"
       },
-	  {
+     {
         type = "unlock-recipe",
         recipe = "cannon-shell-convert"
       },
@@ -80,7 +84,7 @@ data:extend(
     icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
     effects =
     {
-	  {
+    {
         type = "unlock-recipe",
         recipe = "tank-light-chasis-wlsk"
       },
@@ -113,11 +117,11 @@ data:extend(
     icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
     effects =
     {
-	  {
+    {
         type = "unlock-recipe",
         recipe = "mine-tank"
       },
-	  {
+    {
         type = "unlock-recipe",
         recipe = "minepack"
       },
@@ -125,7 +129,7 @@ data:extend(
         type = "unlock-recipe",
         recipe = "rocket-tank"
       },
-	  {
+    {
         type = "unlock-recipe",
         recipe = "rocketpack"
       },
@@ -146,15 +150,15 @@ data:extend(
     icon = "__tanks_for_bob__/graphics/icons/mech-inf.png",
     effects =
     {
-  	  {
+      {
         type = "unlock-recipe",
         recipe = "fish-kit"
       },
-	  {
+    {
         type = "unlock-recipe",
         recipe = "piercing-shotgun-shell-brick"
       },
-  	  {
+      {
         type = "unlock-recipe",
         recipe = "ap-bullet-brick"
       },
@@ -175,15 +179,15 @@ data:extend(
     icon = "__tanks_for_bob__/graphics/icons/chemical-tank-research.png",
     effects =
     {
-	   {
+     {
         type = "unlock-recipe",
         recipe = "50mm-mortar-poison"
       },
-	  {
+    {
         type = "unlock-recipe",
         recipe = "minepack-poison"
       },
-	  
+    
     },
     prerequisites = { "modular-tank-research2", "military-3" },
     unit =
@@ -201,10 +205,10 @@ data:extend(
     icon = "__tanks_for_bob__/graphics/icons/universal-explosive.png",
     effects =
     {
-	  {
+    {
         type = "unlock-recipe",
         recipe = "tank-ammo-universal-explosive-synthetic"
-      }	  
+      }    
     },
     prerequisites = { "modular-tank-research2" },
     unit =
@@ -222,11 +226,11 @@ data:extend(
     icon = "__tanks_for_bob__/graphics/icons/super-tank-research.png",
     effects =
     {
-	  {
+    {
         type = "unlock-recipe",
         recipe = "super-tank"
       },
-	  {
+    {
         type = "unlock-recipe",
         recipe = "super-tank-alternate"
       },
@@ -247,11 +251,11 @@ data:extend(
     icon = "__tanks_for_bob__/graphics/icons/super-tank-research.png",
     effects =
     {
-	  {
+    {
         type = "unlock-recipe",
         recipe = "super-tank-wmd"
       },
-	  {
+    {
         type = "unlock-recipe",
         recipe = "tank-wmd-ammo"
       },
@@ -293,4 +297,4 @@ data:extend(
       
       
       
-	  
+    

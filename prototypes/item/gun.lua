@@ -128,7 +128,7 @@ data:extend(
       cooldown = 14,
       movement_slow_down_factor = 0,
       projectile_creation_distance = 0.6,
-      range = 25,
+      range = 27,
       sound =
       {
         {
