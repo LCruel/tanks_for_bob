@@ -18,22 +18,6 @@ data:extend(
     inventory_size = 1,
     automated_ammo_count = 10,
     attacking_speed = 0.5,
-    energy_source =
-    {
---      type = "electric",
-      -- will produce this much * energy pollution units per tick
-      emissions = 0.15 / 1.5,
---      usage_priority = "primary-input"
-
-      type = "electric",
-      buffer_capacity = "801kJ",
-      input_flow_limit = "4800kW",
-      drain = "24kW",
-      usage_priority = "primary-input"
-
-    },
-
-    energy_usage = "90kW",
 
     folded_animation = 
     {
@@ -94,7 +78,7 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-      ammo_category = "auto-cannon-ammo",
+      ammo_category = "flame-thrower-ammo-tanker",
       cooldown = 6,
       projectile_creation_distance = 5,
 --      projectile_center = {0.0625, -0.0875}, -- same as gun_turret_attack shift
@@ -114,4 +98,8 @@ data:extend(
     }
   },  
 }
+
+
+
+
 )

@@ -69,12 +69,12 @@ data:extend(
     energy_required = 5,
     ingredients =
     {
-      {"plastic-bar", 7},
-      {"explosives", 12}
+      {"plastic-bar", 1},
+      {"explosives", 1}
     },
     results=
     {
-      {type="item", name="tank-ammo-universal-explosive", amount=3},
+      {type="item", name="tank-ammo-universal-explosive", amount=1},
     },
   },
 --     name = "tank-ammo-universal-explosive-synthetic",
