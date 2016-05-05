@@ -22,11 +22,6 @@ data:extend(
               offset_deviation = { {-4,-4},{4,4}},
             },
             {
-              type = "create-entity",
-              entity_name = "teleport-effect",
-              check_buildability = true
-            },
-            {
               type = "create-sticker",
               sticker = "slowdown-sticker"
             },

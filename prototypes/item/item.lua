@@ -43,10 +43,10 @@ data:extend(
   {
     type = "item",
     name = "tank-ammo-reinforced-casing",
-    icon = "__tanks_for_bob__/graphics/icons/reinforce-casing.png",
+    icon = "__tanks_for_bob__/graphics/icons/reinforced-casing.png",
     flags = {"goes-to-main-inventory"},
     subgroup = "tank-ammo-components",
-    order = "a[tank-ammo-components]-a[reinforce-casing]",
+    order = "a[tank-ammo-components]-a[reinforced-casing]",
     stack_size = 100
   },
 	{
