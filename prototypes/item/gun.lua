@@ -12,10 +12,10 @@ data:extend(
     {
       type = "projectile",
       ammo_category = "cannon-shell",
-      cooldown = 90,
+      cooldown = 40,
       movement_slow_down_factor = 0,
       projectile_creation_distance = 0.6,
-      range = 35,
+      range = 50,
       sound =
       {
         {
@@ -36,12 +36,37 @@ data:extend(
     order = "e[flame-thrower]",
     attack_parameters =
     {
-		type = "projectile",
-		ammo_category = "tank-spray-ammo",
-		cooldown = 1,
-		movement_slow_down_factor = 0.6,
-		projectile_creation_distance = 0.7,
-		range = 12
+  		type = "projectile",
+  		ammo_category = "tank-spray-ammo",
+  		cooldown = 1,
+  		movement_slow_down_factor = 0.6,
+  		projectile_creation_distance = 0.7,
+  		range = 12,
+
+      cyclic_sound =
+      {
+        begin_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-start.ogg",
+            volume = 0.7
+          }
+        },
+        middle_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-mid.ogg",
+            volume = 0.7
+          }
+        },
+        end_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-end.ogg",
+            volume = 0.7
+          }
+        }
+      }
     },
     stack_size = 1
   },
@@ -55,12 +80,36 @@ data:extend(
     order = "e[flame-thrower]",
     attack_parameters =
     {
-		type = "projectile",
-		ammo_category = "tank-spray-ammo-2",
-		cooldown = 1,
-		movement_slow_down_factor = 0.6,
-		projectile_creation_distance = 0.7,
-		range = 12
+  		type = "projectile",
+  		ammo_category = "tank-spray-ammo-2",
+  		cooldown = 1,
+  		movement_slow_down_factor = 0.6,
+  		projectile_creation_distance = 0.7,
+  		range = 12,
+      cyclic_sound =
+      {
+        begin_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-start.ogg",
+            volume = 0.7
+          }
+        },
+        middle_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-mid.ogg",
+            volume = 0.7
+          }
+        },
+        end_sound =
+        {
+          {
+            filename = "__base__/sound/fight/flamethrower-end.ogg",
+            volume = 0.7
+          }
+        }
+      }
     },
     stack_size = 1
   },
@@ -75,15 +124,15 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-	  ammo_category = "auto-cannon-ammo",
-      cooldown = 17,
+	    ammo_category = "auto-cannon-ammo",
+      cooldown = 14,
       movement_slow_down_factor = 0,
       projectile_creation_distance = 0.6,
       range = 25,
       sound =
       {
         {
-          filename = "__base__/sound/fight/tank-cannon.ogg",
+          filename = "__tanks_for_bob__/sound/fight/auto-cannon.ogg",
           volume = 0.5
         }
       }
@@ -101,21 +150,47 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-	  ammo_category = "tank-nade-ammo",
-      cooldown = 120,
+	    ammo_category = "tank-nade-ammo",
+      cooldown = 60,
       movement_slow_down_factor = 0.2,
       projectile_creation_distance = 2,
-      range = 500,
+      range = 75,
       sound =
       {
         {
-          filename = "__base__/sound/fight/tank-cannon.ogg",
+          filename = "__tanks_for_bob__/sound/fight/heavy-artillery-3.ogg",
           volume = 1
         }
       }
     },
     stack_size = 1
+  },
+--tank-artillery
+  {
+    type = "gun",
+    name = "tank-artillery",
+    icon = "__base__/graphics/icons/tank-cannon.png",
+    flags = {"goes-to-main-inventory"},
+    subgroup = "gun",
+    order = "z[tank]-a[cannon]",
+    attack_parameters =
+    {
+      type = "beam",
+      ammo_category = "tank-nade-ammo",
+      cooldown = 60,
+      movement_slow_down_factor = 0.2,
+      projectile_creation_distance = 2,
+      range = 75,
+      sound =
+      {
+        {
+          filename = "__tanks_for_bob__/sound/fight/heavy-artillery-3.ogg",
+          volume = 1
+        }
+      }
     },
+    stack_size = 1
+  },  
 --tank-mine-cannon
 	{
     type = "gun",
@@ -127,7 +202,7 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-	  ammo_category = "tank-mine-ammo",
+	    ammo_category = "tank-mine-ammo",
       cooldown = 30,
       movement_slow_down_factor = 0.2,
       projectile_creation_distance = 2,
@@ -190,11 +265,11 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-	  ammo_category = "tank-wmd-ammo",
+	    ammo_category = "tank-wmd-ammo",
       cooldown = 240,
       movement_slow_down_factor = 0.2,
       projectile_creation_distance = 2,
-      range = 1250,
+      range = 125,
       sound =
       {
         {
@@ -216,11 +291,11 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-	  ammo_category = "tank-rocket-ammo",
+	    ammo_category = "tank-rocket-ammo",
       movement_slow_down_factor = 0.3,
       cooldown = 7.5,
       projectile_creation_distance = 0.6,
-      range = 500
+      range = 175
     },
     stack_size = 1
   },

@@ -89,15 +89,15 @@ data:extend(
         type = "direct",
         action_delivery =
         {
-			{
-				type = "flame-thrower",
-				explosion = "tank-flame-thrower-explosion",
-				direction_deviation = 0.07,
-				speed_deviation = 0.1,
-				starting_frame_deviation = 0.07,
-				projectile_starting_speed = 0.2,
-				starting_distance = 0.6,
-			},	
+    			{
+    				type = "flame-thrower",
+    				explosion = "tank-flame-thrower-explosion",
+    				direction_deviation = 0.07,
+    				speed_deviation = 0.1,
+    				starting_frame_deviation = 0.07,
+    				projectile_starting_speed = 0.2,
+    				starting_distance = 0.6,
+    			},	
         }
       }
     },
@@ -206,10 +206,10 @@ data:extend(
         {
           type = "projectile",
           projectile = "45mm-projectile",
-          starting_speed = 1,
+          starting_speed = 3,
           direction_deviation = 0.1,
           range_deviation = 0.1,
-          max_range = 30
+          max_range = 25
         }
       },
     },
@@ -238,14 +238,49 @@ data:extend(
         type = "direct",
         action_delivery =
         {
-          type = "projectile",
-          projectile = "50mm-projectile",
-          starting_speed = 1,
-          direction_deviation = 0.3,
-          range_deviation = 0.3,
-          max_range = 750
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 75.
+          },
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 75.
+          },
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 75.
+          },
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 75.
+          },
+          {
+            type = "projectile",
+            projectile = "50mm-projectile",
+            starting_speed = 0.3,
+            direction_deviation = 0.3,
+            range_deviation = 0.3,
+            max_range = 75.
+          }
         }
       },
+
     },
     magazine_size = 1,
     subgroup = "tank-ammo",
@@ -380,7 +415,7 @@ data:extend(
       }
     },
     magazine_size = 5,
-	subgroup = "tank-ammo",
+	 subgroup = "tank-ammo",
     order = "a[tank-ammo]",
     stack_size = 100
   },
@@ -397,7 +432,7 @@ data:extend(
       source_effects =
       {
         type = "create-entity",
-        entity_name = "explosion-gunshot"
+        entity_name = "medium-explosion"
       },
       action =
       {
@@ -442,7 +477,7 @@ data:extend(
           starting_speed = 1.5,
           direction_deviation = 0.05,
           range_deviation = 0.05,
-          max_range = 1250
+          max_range = 125
         }
       },
     },

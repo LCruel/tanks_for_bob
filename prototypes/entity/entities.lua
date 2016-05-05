@@ -1,7 +1,61 @@
-
 data:extend (
 {
-	--tank-assembly
+-- Special  
+--teleport-effect
+ {
+    type = "explosion",
+    name = "pre-teleport-effect",
+    flags = {"not-on-map"},
+    animations =
+    {
+      {
+        filename = "__tanks_for_bob__/graphics/entity/teleport/teleport-effect.png",
+        priority = "extra-high",
+        width = 48,
+        height = 64,
+        frame_count = 1,
+        line_length = 10,
+        --shift = {-0.56, -0.96},
+        animation_speed = 0.5
+      }
+    },
+  },
+--teleport-effect
+ {
+    type = "explosion",
+    name = "teleport-effect",
+    flags = {"not-on-map"},
+    animations =
+    {
+      {
+        filename = "__tanks_for_bob__/graphics/entity/teleport/teleport-effect.png",
+        priority = "extra-high",
+        width = 48,
+        height = 64,
+        frame_count = 100,
+        line_length = 10,
+        --shift = {-0.56, -0.96},
+        animation_speed = 0.5
+      }
+    },
+    light = {intensity = 1, size = 50},
+    sound =
+    {
+      aggregation =
+      {
+        max_count = 1,
+        remove = true
+      },
+      variations =
+      {
+        {
+          filename = "__base__/sound/fight/old/laser.ogg",
+          volume = 0.8
+        },
+      }
+    },
+  },
+-- tank-assembly
 	{
     type = "assembling-machine",
     name = "tank-assembling-machine",
@@ -60,7 +114,7 @@ data:extend (
     module_slots = 4,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
-	--munition maker
+-- munition maker
 	{
     type = "assembling-machine",
     name = "tank-ammo-assembling-machine",
@@ -120,7 +174,7 @@ data:extend (
     module_slots = 1,
     allowed_effects = {"consumption", "speed", "productivity", "pollution"}
   },
-	--tank-flame-thrower-explosion
+-- tank-flame-thrower-explosion
 	{
 	    type = "flame-thrower-explosion",
 	    name = "tank-flame-thrower-explosion",
@@ -149,7 +203,7 @@ data:extend (
 	    	type = "fire"
 	    }
   },
-	--massive-scorchmark
+-- massive-scorchmark
 	{
     type = "corpse",
     name = "massive-scorchmark",
@@ -205,8 +259,8 @@ data:extend (
       }
     }
   },
-	--land-mine-poison
-  	{
+-- land-mine-poison
+  {
     type = "land-mine",
     name = "land-mine-poison",
     icon = "__base__/graphics/icons/land-mine.png",
@@ -258,27 +312,27 @@ data:extend (
               {
                 type = "instant",
                 target_effects = 
-				{
+				        {
                   type = "damage",
-                  damage = { amount = 20, type = "explosion"}
+                  damage = { amount = 900, type = "explosion"}
                 },
               }
             },
           },
           {
-		type = "create-entity",
-		entity_name = "poison-cloud"
+        		type = "create-entity",
+        		entity_name = "poison-cloud"
           },
           {
-		type = "damage",
-		damage = { amount = 500, type = "explosion"}
+        		type = "damage",
+        		damage = { amount = 500, type = "explosion"}
           }
         }
       }
     },
   },
-	--lazer-cloud
-  	{
+-- lazer-cloud
+  {
     type = "smoke",
     name = "lazer-cloud",
     flags = {"not-on-map"},
@@ -330,7 +384,7 @@ data:extend (
     },
     action_frequency = 30
   },
---poison-cloud-2
+-- poison-cloud-2
   {
     type = "smoke-with-trigger",
     name = "poison-cloud-2",
@@ -383,7 +437,7 @@ data:extend (
     },
     action_frequency = 30
   },
---Iron wall
+-- Iron wall
   {
     type = "wall",
     name = "iron-wall",
@@ -707,6 +761,35 @@ data:extend (
           }
         }
       }
+    }
+  },
+-- Bullet hit sound
+  {
+    type = "explosion",
+    name = "auto-cannon-hit",
+    flags = {"not-on-map"},
+    animations =
+    {
+      {
+        filename = "__base__/graphics/entity/explosion-gunshot/explosion-gunshot.png",
+        priority = "extra-high",
+        width = 34,
+        height = 38,
+        frame_count = 13,
+        animation_speed = 1.5,
+        shift = {0, 0}
+      }
+    },
+    rotate = true,
+    light = {intensity = 1, size = 10},
+    smoke = "smoke-fast",
+    smoke_count = 1,
+    smoke_slow_down_factor = 1,
+    sound =
+    {
+      filename = "__tanks_for_bob_dev__/sound/fight/auto-cannon-hit.ogg",
+      volume = 1.0
+      
     }
   },
 }

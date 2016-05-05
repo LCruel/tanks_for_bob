@@ -5,9 +5,8 @@ data:extend(
     type = "recipe",
     name = "flame-tank",
     enabled = "false",
-	category = "tank-crafting",
-
-	energy_required = 45,
+    category = "tank-crafting",
+    energy_required = 45,
     ingredients =
     {
       {"engine-unit", 15},
@@ -22,9 +21,8 @@ data:extend(
     type = "recipe",
     name = "auto-tank",
     enabled = "false",
-	category = "tank-crafting",
-
-	energy_required = 45,
+    category = "tank-crafting",
+    energy_required = 45,
     ingredients =
     {
       {"engine-unit", 15},
@@ -39,9 +37,9 @@ data:extend(
     type = "recipe",
     name = "nade-tank",
     enabled = "false",
-	category = "tank-crafting",
+  category = "tank-crafting",
 
-	energy_required = 45,
+  energy_required = 45,
     ingredients =
     {
       {"engine-unit", 15},
@@ -56,9 +54,9 @@ data:extend(
     type = "recipe",
     name = "flame-tank-wlsk",
     enabled = "false",
-	category = "tank-crafting",
+  category = "tank-crafting",
 
-	energy_required = 15,
+  energy_required = 15,
     ingredients =
     {
       {"tank-light-chasis-wlsk", 1},
@@ -71,9 +69,9 @@ data:extend(
     type = "recipe",
     name = "auto-tank-wlsk",
     enabled = "false",
-	category = "tank-crafting",
+  category = "tank-crafting",
 
-	energy_required = 15,
+  energy_required = 15,
     ingredients =
     {
       {"tank-light-chasis-wlsk", 1},
@@ -88,8 +86,8 @@ data:extend(
     type = "recipe",
     name = "nade-tank-wlsk",
     enabled = "false",
-	category = "tank-crafting",
-	energy_required = 15,
+  category = "tank-crafting",
+  energy_required = 15,
     ingredients =
     {
       {"tank-light-chasis-wlsk", 1},
@@ -104,8 +102,8 @@ data:extend(
     type = "recipe",
     name = "mine-tank",
     enabled = "false",
-	category = "tank-crafting",
-	energy_required = 60,
+  category = "tank-crafting",
+  energy_required = 60,
     ingredients =
     {
       {"engine-unit", 15},
@@ -120,8 +118,8 @@ data:extend(
     type = "recipe",
     name = "rocket-tank",
     enabled = "false",
-	category = "tank-crafting",
-	energy_required = 60,
+  category = "tank-crafting",
+  energy_required = 60,
     ingredients =
     {
       {"engine-unit", 15},
@@ -136,8 +134,8 @@ data:extend(
     type = "recipe",
     name = "super-tank",
     enabled = "false",
-	category = "tank-crafting",
-	energy_required = 100,
+  category = "tank-crafting",
+  energy_required = 100,
     ingredients =
     {
       {"electric-engine-unit", 30},
@@ -152,8 +150,8 @@ data:extend(
     type = "recipe",
     name = "super-tank-alternate",
     enabled = "false",
-	category = "tank-crafting",
-	energy_required = 100,
+  category = "tank-crafting",
+  energy_required = 100,
     ingredients =
     {
       {"electric-engine-unit", 30},
@@ -168,8 +166,8 @@ data:extend(
     type = "recipe",
     name = "super-tank-wmd",
     enabled = "false",
-	category = "tank-crafting",
-	energy_required = 240,
+  category = "tank-crafting",
+  energy_required = 240,
     ingredients =
     {
       {"electric-engine-unit", 30},
@@ -184,8 +182,8 @@ data:extend(
     type = "recipe",
     name = "car-flamer",
     enabled = "false",
-	category = "tank-crafting",
-	energy_required = 25,
+  category = "tank-crafting",
+  energy_required = 25,
     ingredients =
     {
       {"engine-unit", 10},

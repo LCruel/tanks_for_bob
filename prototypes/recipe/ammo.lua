@@ -5,13 +5,12 @@ data:extend(
     type = "recipe",
     name = "flame-thrower-ammo-tanker",
     enabled = "false",
-	category = "tank-ammo-component",
+	  category = "tank-ammo-component",
     energy_required = 10,
     ingredients =
     {
-      {"tank-ammo-universal-casing", 2},
-      {"tank-ammo-universal-explosive", 1},
-	  {"flame-thrower-ammo", 5}
+       {"tank-ammo-casing", 2},
+	     {"flame-thrower-ammo", 5}
     },
     result = "flame-thrower-ammo-tanker",
   },
@@ -20,7 +19,7 @@ data:extend(
     type = "recipe",
     name = "flame-thrower-ammo-tanker-2",
     enabled = "false",
-	category = "tank-ammo-component",
+	  category = "tank-ammo-component",
     energy_required = 10,
     ingredients =
     {
@@ -37,7 +36,7 @@ data:extend(
     energy_required = 15,
     ingredients =
     {
-      {"tank-ammo-universal-casing", 1},
+      {"tank-ammo-casing", 1},
       {"tank-ammo-universal-explosive", 1}
     },
     result = "ap-bullet-brick",
@@ -51,7 +50,7 @@ data:extend(
     energy_required = 15,
     ingredients =
     {
-      {"tank-ammo-universal-casing", 2},
+      {"tank-ammo-casing", 2},
       {"tank-ammo-universal-explosive", 1}
     },
      result = "piercing-shotgun-shell-brick",
@@ -65,8 +64,8 @@ data:extend(
     energy_required = 7,
     ingredients =
     {
-      {"tank-ammo-universal-casing", 2},
-      {"tank-ammo-universal-explosive", 2}
+      {"tank-ammo-casing", 12},
+      {"tank-ammo-universal-explosive", 12}
     },
     result = "45mm-auto"
   },  
@@ -79,7 +78,7 @@ data:extend(
     energy_required = 10,
     ingredients =
     {
-      {"tank-ammo-universal-casing", 2},
+      {"tank-ammo-casing", 2},
       {"tank-ammo-universal-explosive", 2}
     },
     result = "50mm-mortar"
@@ -94,7 +93,7 @@ data:extend(
     ingredients =
     {
 	  {"electronic-circuit", 5},
-      {"tank-ammo-universal-casing", 2},
+      {"tank-ammo-casing", 2},
       {"tank-ammo-universal-explosive", 3}
     },
     result = "50mm-mortar-poison"
@@ -108,7 +107,7 @@ data:extend(
     energy_required = 20,
     ingredients =
     {
-      {"tank-ammo-universal-casing", 2},
+      {"tank-ammo-casing", 2},
       {"tank-ammo-universal-explosive", 2}
     },
     result = "minepack"
@@ -122,7 +121,7 @@ data:extend(
     energy_required = 30,
     ingredients =
     {
-      {"tank-ammo-universal-casing", 2},
+      {"tank-ammo-casing", 2},
       {"tank-ammo-universal-explosive", 3}
     },
     result = "minepack-poison"
@@ -137,7 +136,7 @@ data:extend(
     ingredients =
     {
 	  {"electronic-circuit", 5},
-      {"tank-ammo-universal-casing", 1},
+      {"tank-ammo-casing", 1},
       {"tank-ammo-universal-explosive", 1}
     },
     result = "rocketpack"
@@ -151,7 +150,7 @@ data:extend(
     energy_required = 5,
     ingredients =
     {
-      {"tank-ammo-universal-casing", 1},
+      {"tank-ammo-casing", 1},
       {"tank-ammo-universal-explosive", 1}
     },
      result = "cannon-shell-2"
@@ -166,7 +165,7 @@ data:extend(
     ingredients =
     {
 	  {"processing-unit", 5},
-      {"tank-ammo-universal-casing", 10},
+      {"tank-ammo-casing", 10},
       {"tank-ammo-universal-explosive", 20}
     },
     result = "tank-wmd-ammo"
