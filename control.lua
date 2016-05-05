@@ -28,12 +28,12 @@ end)
 
 -- on_built_entity()
 function on_put_item(player)
-  player.print("Onput")
+  
 end
 
 -- on_built_entity()
 function on_built_entity(player)
-  player.print("Onbuild")
+
 end
 
 -- enityCreated()
