@@ -1,5 +1,28 @@
 data:extend(
 { 
+
+  --tank-recall
+  {
+    type = "technology",
+    name = "tank-recall",
+    icon = "__tanks_for_bob__/graphics/icons/tank-recall-token.png",
+    prerequisites = {"modular-tank-research"},
+    unit =
+    {
+      count = 20,
+      ingredients = {{"science-pack-1", 1}, {"science-pack-2", 1}, {"science-pack-3", 1}},
+      time = 15
+    },
+    order = "a-b-c",
+
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "tank-recall-token",
+      },
+    },
+  },
   --modular-tank-research
   {
     type = "technology",

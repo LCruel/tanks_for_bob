@@ -244,7 +244,7 @@ data:extend(
             starting_speed = 0.3,
             direction_deviation = 0.3,
             range_deviation = 0.3,
-            max_range = 200.
+            max_range = 75.
           },
           {
             type = "projectile",
@@ -252,7 +252,7 @@ data:extend(
             starting_speed = 0.3,
             direction_deviation = 0.3,
             range_deviation = 0.3,
-            max_range = 200.
+            max_range = 75.
           },
           {
             type = "projectile",
@@ -260,7 +260,7 @@ data:extend(
             starting_speed = 0.3,
             direction_deviation = 0.3,
             range_deviation = 0.3,
-            max_range = 200.
+            max_range = 75.
           },
           {
             type = "projectile",
@@ -268,7 +268,7 @@ data:extend(
             starting_speed = 0.3,
             direction_deviation = 0.3,
             range_deviation = 0.3,
-            max_range = 200.
+            max_range = 75.
           },
           {
             type = "projectile",
@@ -276,10 +276,11 @@ data:extend(
             starting_speed = 0.3,
             direction_deviation = 0.3,
             range_deviation = 0.3,
-            max_range = 200.
+            max_range = 75.
           }
         }
       },
+
     },
     magazine_size = 1,
     subgroup = "tank-ammo",
@@ -414,7 +415,7 @@ data:extend(
       }
     },
     magazine_size = 5,
-	subgroup = "tank-ammo",
+	 subgroup = "tank-ammo",
     order = "a[tank-ammo]",
     stack_size = 100
   },
@@ -476,7 +477,7 @@ data:extend(
           starting_speed = 1.5,
           direction_deviation = 0.05,
           range_deviation = 0.05,
-          max_range = 1250
+          max_range = 125
         }
       },
     },

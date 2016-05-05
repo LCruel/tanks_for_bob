@@ -78,21 +78,21 @@ data:extend(
     attack_parameters =
     {
       type = "projectile",
-      ammo_category = "flame-thrower-ammo-tanker",
+      ammo_category = "tank-spray-ammo",
       cooldown = 6,
-      projectile_creation_distance = 5,
---      projectile_center = {0.0625, -0.0875}, -- same as gun_turret_attack shift
-      shell_particle =
-      {
-        name = "shell-particle",
-        direction_deviation = 0.1,
-        speed = 0.1,
-        speed_deviation = 0.03,
-        center = {0, 0},
-        creation_distance = -1.925,
-        starting_frame_speed = 0.2,
-        starting_frame_speed_deviation = 0.1
-      },
+      projectile_creation_distance = 1,4,
+      projectile_center = {0.0625, -0.0875}, -- same as gun_turret_attack shift
+--      shell_particle =
+--      {
+--        name = "shell-particle",
+--        direction_deviation = 0.1,
+--        speed = 0.1,
+--        speed_deviation = 0.03,
+--        center = {0, 0},
+--        creation_distance = -1.925,
+--        starting_frame_speed = 0.2,
+--        starting_frame_speed_deviation = 0.1
+--      },
       range = 25,
       sound = make_heavy_gunshot_sounds(),
     }

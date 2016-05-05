@@ -1,5 +1,60 @@
 data:extend (
 {
+-- Special  
+--teleport-effect
+ {
+    type = "explosion",
+    name = "pre-teleport-effect",
+    flags = {"not-on-map"},
+    animations =
+    {
+      {
+        filename = "__tanks_for_bob__/graphics/entity/teleport/teleport-effect.png",
+        priority = "extra-high",
+        width = 48,
+        height = 64,
+        frame_count = 1,
+        line_length = 10,
+        --shift = {-0.56, -0.96},
+        animation_speed = 0.5
+      }
+    },
+  },
+--teleport-effect
+ {
+    type = "explosion",
+    name = "teleport-effect",
+    flags = {"not-on-map"},
+    animations =
+    {
+      {
+        filename = "__tanks_for_bob__/graphics/entity/teleport/teleport-effect.png",
+        priority = "extra-high",
+        width = 48,
+        height = 64,
+        frame_count = 100,
+        line_length = 10,
+        --shift = {-0.56, -0.96},
+        animation_speed = 0.5
+      }
+    },
+    light = {intensity = 1, size = 50},
+    sound =
+    {
+      aggregation =
+      {
+        max_count = 1,
+        remove = true
+      },
+      variations =
+      {
+        {
+          filename = "__base__/sound/fight/old/laser.ogg",
+          volume = 0.8
+        },
+      }
+    },
+  },
 -- tank-assembly
 	{
     type = "assembling-machine",

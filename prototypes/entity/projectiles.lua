@@ -1,7 +1,3 @@
-local function test()
-  game.player.print("Hello Daniel")
-end
-
 data:extend(
 {
  --50mm-Mortar
@@ -10,6 +6,7 @@ data:extend(
     name = "50mm-projectile",
     flags = {"not-on-map"},
     acceleration = 0.0,
+
     action =
     {
       {
@@ -22,16 +19,16 @@ data:extend(
             {
               type = "create-entity",
               entity_name = "big-explosion",
-              offset_deviation = { {-4,-4},{4,4}}
+              offset_deviation = { {-4,-4},{4,4}},
             },
             {
               type = "create-entity",
-              entity_name = "small-scorchmark",
+              entity_name = "teleport-effect",
               check_buildability = true
             },
             {
               type = "create-sticker",
-                sticker = "slowdown-sticker"
+              sticker = "slowdown-sticker"
             },
           }
         }

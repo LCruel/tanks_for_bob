@@ -3,6 +3,19 @@ data:extend(
 -- tank-assembling-machine
   {
     type = "recipe",
+    name = "tank-recall-token",
+    enabled = "false",
+    ingredients =
+    {
+      {"plastic-bar", 3},
+      {"electronic-circuit", 3},
+      {"advanced-circuit", 1},
+    },
+    result = "tank-recall-token"
+  },
+-- tank-assembling-machine
+  {
+    type = "recipe",
     name = "tank-assembling-machine",
     enabled = "false",
     ingredients =
