@@ -289,7 +289,7 @@ data:extend(
     icon = "__tanks_for_bob__/graphics/icons/flame-tank-wlsk.png",
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "flame-tank-wlsk"},
-  max_health = 2000,
+    max_health = 2000,
     corpse = "medium-remnants",
     dying_explosion = "medium-explosion",
     energy_per_hit_point = 0.5,
@@ -2290,7 +2290,7 @@ data:extend(
     },
     collision_box = {{2*-0.9, 2*-1.3}, {2*0.9, 2*1.3}},
     selection_box = {{2*-0.9, 2*-1.3}, {2*0.9, 2*1.3}},
-	--scale = 2,
+	   --scale = 2,
     effectivity = 0.4,
     braking_power = "250kW",
     burner =
@@ -2358,7 +2358,7 @@ data:extend(
           axially_symmetrical = false,
           direction_count = 64,
           shift = {2*-0.140625, 2*-0.28125},
-		  scale = 2,
+		      scale = 2,
           animation_speed = 8,
           max_advance = 1,
           stripes =
@@ -2393,7 +2393,7 @@ data:extend(
           axially_symmetrical = false,
           direction_count = 64,
           shift = {2*-0.140625, 2*-0.65625},
-		  scale = 2,
+		      scale = 2,
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
@@ -2423,7 +2423,7 @@ data:extend(
           axially_symmetrical = false,
           direction_count = 64,
           shift = {2*0.59375, 2*0.328125},
-		  scale = 2,
+		      scale = 2,
           max_advance = 1,
           stripes = util.multiplystripes(2,
           {
@@ -2464,7 +2464,7 @@ data:extend(
           axially_symmetrical = false,
           direction_count = 64,
           shift = {2*-0.15625, 2*-1.07812},
-		  scale = 2,
+		      scale = 2,
           animation_speed = 12,
         },
         {
@@ -2477,7 +2477,7 @@ data:extend(
           apply_runtime_tint = true,
           direction_count = 64,
           shift = {2*-0.15625, 2*-1.23438},
-		  scale = 2,
+		    scale = 2,
         },
         {
           filename = "__base__/graphics/entity/tank/turret-shadow.png",
@@ -2489,7 +2489,7 @@ data:extend(
           draw_as_shadow = true,
           direction_count = 64,
           shift = {2*1.70312, 2*0.640625},
-		  scale = 2,
+		      scale = 2,
         }
       }
     },
@@ -2535,9 +2535,9 @@ data:extend(
     tank_driving = true,
     weight = 50000,
     inventory_size = 64,
-    guns = { "tank-machinegun-turret","tank-auto-cannon", "tank-cannon-2" },
+    guns = { "tank-machinegun-turret","tank-auto-cannon", "tank-cannon-2", "tank-nade-cannon" },
   },
-  --Super Heavy Alternate
+--Super Heavy Alternate
   {
     type = "car",
     name = "super-tank-alternate",
@@ -2578,7 +2578,7 @@ data:extend(
     },
     collision_box = {{2*-0.9, 2*-1.3}, {2*0.9, 2*1.3}},
     selection_box = {{2*-0.9, 2*-1.3}, {2*0.9, 2*1.3}},
-	--scale = 2,
+	 --scale = 2,
     effectivity = 0.4,
     braking_power = "250kW",
     burner =
@@ -2646,7 +2646,7 @@ data:extend(
           axially_symmetrical = false,
           direction_count = 64,
           shift = {2*-0.140625, 2*-0.28125},
-		  scale = 2,
+		      scale = 2,
           animation_speed = 8,
           max_advance = 1,
           stripes =
@@ -2681,7 +2681,7 @@ data:extend(
           axially_symmetrical = false,
           direction_count = 64,
           shift = {2*-0.140625, 2*-0.65625},
-		  scale = 2,
+		      scale = 2,
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
@@ -2711,7 +2711,7 @@ data:extend(
           axially_symmetrical = false,
           direction_count = 64,
           shift = {2*0.59375, 2*0.328125},
-		  scale = 2,
+		      scale = 2,
           max_advance = 1,
           stripes = util.multiplystripes(2,
           {
@@ -2752,7 +2752,7 @@ data:extend(
           axially_symmetrical = false,
           direction_count = 64,
           shift = {2*-0.15625, 2*-1.07812},
-		  scale = 2,
+		      scale = 2,
           animation_speed = 12,
         },
         {
@@ -2765,7 +2765,7 @@ data:extend(
           apply_runtime_tint = true,
           direction_count = 64,
           shift = {2*-0.15625, 2*-1.23438},
-		  scale = 2,
+		      scale = 2,
         },
         {
           filename = "__base__/graphics/entity/tank/turret-shadow.png",
@@ -2777,7 +2777,7 @@ data:extend(
           draw_as_shadow = true,
           direction_count = 64,
           shift = {2*1.70312, 2*0.640625},
-		  scale = 2,
+          scale = 2,
         }
       }
     },
@@ -2866,7 +2866,7 @@ data:extend(
     },
     collision_box = {{2*-0.9, 2*-1.3}, {2*0.9, 2*1.3}},
     selection_box = {{2*-0.9, 2*-1.3}, {2*0.9, 2*1.3}},
-	--scale = 2,
+	  --scale = 2,
     effectivity = 0.4,
     braking_power = "250kW",
     burner =
@@ -2999,7 +2999,7 @@ data:extend(
           axially_symmetrical = false,
           direction_count = 64,
           shift = {2*0.59375, 2*0.328125},
-		  scale = 2,
+		      scale = 2,
           max_advance = 1,
           stripes = util.multiplystripes(2,
           {
@@ -3053,7 +3053,7 @@ data:extend(
           apply_runtime_tint = true,
           direction_count = 64,
           shift = {2*-0.15625, 2*-1.23438},
-		  scale = 2,
+		      scale = 2,
         },
         {
           filename = "__base__/graphics/entity/tank/turret-shadow.png",
@@ -3065,7 +3065,7 @@ data:extend(
           draw_as_shadow = true,
           direction_count = 64,
           shift = {2*1.70312, 2*0.640625},
-		  scale = 2,
+		      scale = 2,
         }
       }
     },

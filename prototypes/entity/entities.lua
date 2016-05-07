@@ -787,7 +787,7 @@ data:extend (
     smoke_slow_down_factor = 1,
     sound =
     {
-      filename = "__tanks_for_bob_dev__/sound/fight/auto-cannon-hit.ogg",
+      filename = "__tanks_for_bob__/sound/fight/auto-cannon-hit.ogg",
       volume = 1.0
       
     }
