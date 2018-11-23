@@ -1,5 +1,4 @@
 require "util"
-require "defines"
 
 -- Events
 script.on_event(defines.events.on_player_driving_changed_state, function(event)
@@ -19,11 +18,11 @@ script.on_event(defines.events.on_trigger_created_entity, function(event)
 end)
 
 script.on_event(defines.events.on_built_entity, function(event)
-  on_built_entity(game.get_player(event.player_index) )
+  on_built_entity(game.players[event.player_index] )
 end)
 
 script.on_event(defines.events.on_put_item, function(event)
-  on_put_item( game.get_player(event.player_index) )
+  on_put_item( game.players[event.player_index] )
 end)
 
 -- on_built_entity()
@@ -56,7 +55,7 @@ end
 
 --Function tank_talk(player_index){
 function tank_talk(player_index)
-  local player = game.get_player(player_index) 
+  local player = game.players[player_index]
   local tanktype = nil
   local count_auto_cannon_shells = 0
   local count_cannon_shells = 0
@@ -102,7 +101,7 @@ function tankCloseGui(player)
 end
 
 function tank_button(button, player_index)
-  local player = game.get_player(player_index) 
+  local player = game.players[player_index]
   local tank = player.vehicle
 
   if( button == "set_recal_tank" ) then
@@ -121,7 +120,7 @@ function teleportEffect(entity)
   local entityPlayer = entity.surface.find_entity('player', entity.position)
   if( entityPlayer ~= nil ) then
     --entityPlayer = entity.surface.find_nearest_enemy{position={entity.position.x, entity.position.y},max_distance=3,force="enemy"}
-    for c, tplayer in ipairs(game.players) do
+    for c, tplayer in pairs(game.players) do
       --game.players[1].print("Looking x".. entityPlayer.position.x .." y ".. entityPlayer.position.y .." == x".. tplayer.position.x .." y ".. tplayer.position.y)
       if( tplayer.position.x == entityPlayer.position.x and tplayer.position.y == entityPlayer.position.y ) then
         player = tplayer
@@ -142,10 +141,10 @@ function teleportEffect(entity)
       player.print("Failed! Missing linked tank.")
     end
   else
-    for c, tplayer in ipairs(game.players) do
-      game.players[1].print("Looking in tanks")
+  	--game.players[1].print("Looking in tanks")
+    for c, tplayer in pairs(game.players) do      
       if( tplayer.vehicle ~= nil ) then
-        game.players[1].print("Looking found player in tank")
+        --game.players[1].print("Looking found player in tank")
         if( tplayer.vehicle.position.x == tplayer.vehicle.position.x and entity.position.y == entity.position.y ) then
           player = tplayer
           player.insert{name="tank-recall-token", count=1}

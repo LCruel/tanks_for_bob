@@ -1,5 +1,15 @@
 data:extend(
 {
+   {
+    type = "item",
+    name = "modular-tank",
+    icon = "__tanks_for_bob__/graphics/icons/auto-tank.png",
+    flags = {"goes-to-quickbar"},
+    subgroup = "tank-vehicle",
+    order = "b[modular-tank]-a[modular-tank]",
+    place_result = "modular-tank",
+    stack_size = 1
+  },
   {
     type = "item",
     name = "flame-tank",

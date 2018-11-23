@@ -183,7 +183,7 @@ data:extend (
 	    animations =
 	    {
 	      {
-	        filename = "__base__/graphics/entity/flame-thrower-explosion/flame-thrower-explosion.png",
+	        filename = "__base__/graphics/entity/flamethrower-fire-stream/flamethrower-explosion.png",
 	        priority = "extra-high",
 	        width = 64,
 	        height = 64,
