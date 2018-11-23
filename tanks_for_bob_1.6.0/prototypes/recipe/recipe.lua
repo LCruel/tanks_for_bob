@@ -61,7 +61,7 @@ data:extend(
     type = "recipe",
     name = "iron-walls",
     enabled = "false",
-    energy_required = "5",
+    energy_required = 5,
     ingredients = 
     {
       {"iron-plate", 4},
