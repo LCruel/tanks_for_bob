@@ -4,6 +4,7 @@ data:extend(
     type = "item-group",
     name = "tanks",
     icon = "__tanks_for_bob__/graphics/icons/tank-group.png",
+    icon_size = 64,
     order = "z",
     inventory_order = "z"
   },

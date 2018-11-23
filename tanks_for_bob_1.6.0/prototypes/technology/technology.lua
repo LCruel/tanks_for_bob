@@ -6,6 +6,7 @@ data:extend(
     type = "technology",
     name = "tank-recall",
     icon = "__tanks_for_bob__/graphics/icons/tank-recall-token.png",
+    icon_size = 32,
     prerequisites = {"modular-tank-research"},
     unit =
     {
@@ -28,6 +29,7 @@ data:extend(
     type = "technology",
     name = "modular-tank-research",
     icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
+    icon_size = 64,
     effects =
     {
       {
@@ -105,6 +107,7 @@ data:extend(
     type = "technology",
     name = "modular-tank-research2",
     icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
+    icon_size = 64,
     effects =
     {
     {
@@ -138,6 +141,7 @@ data:extend(
     type = "technology",
     name = "modular-tank-research3",
     icon = "__tanks_for_bob__/graphics/icons/modular-tank-research.png",
+    icon_size = 64,
     effects =
     {
     {
@@ -171,6 +175,7 @@ data:extend(
     type = "technology",
     name = "mechanized-infantry-research",
     icon = "__tanks_for_bob__/graphics/icons/mech-inf.png",
+    icon_size = 64,
     effects =
     {
       {
@@ -200,6 +205,7 @@ data:extend(
     type = "technology",
     name = "new-munitions",
     icon = "__tanks_for_bob__/graphics/icons/chemical-tank-research.png",
+    icon_size = 64,
     effects =
     {
      {
@@ -226,6 +232,7 @@ data:extend(
     type = "technology",
     name = "organic-explosives",
     icon = "__tanks_for_bob__/graphics/icons/universal-explosive.png",
+    icon_size = 32,
     effects =
     {
     {
@@ -247,6 +254,7 @@ data:extend(
     type = "technology",
     name = "super-tank-research",
     icon = "__tanks_for_bob__/graphics/icons/super-tank-research.png",
+    icon_size = 64,
     effects =
     {
     {
@@ -272,6 +280,7 @@ data:extend(
     type = "technology",
     name = "super-tank-research2",
     icon = "__tanks_for_bob__/graphics/icons/super-tank-research.png",
+    icon_size = 64,
     effects =
     {
     {
@@ -297,6 +306,7 @@ data:extend(
     type = "technology",
     name = "iron-walls",
     icon = "__tanks_for_bob__/graphics/icons/iron-wall-research.png",
+    icon_size = 32,
     effects =
     {
       {

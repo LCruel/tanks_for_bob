@@ -58,6 +58,7 @@ data:extend (
 -- tank-assembly
 	{
     type = "assembling-machine",
+    icon_size = 32,
     name = "tank-assembling-machine",
     icon = "__tanks_for_bob__/graphics/icons/tank-assembling-machine.png",
     flags = {"placeable-neutral","placeable-player", "player-creation"},
@@ -119,6 +120,7 @@ data:extend (
     type = "assembling-machine",
     name = "tank-ammo-assembling-machine",
     icon = "__tanks_for_bob__/graphics/icons/tank-ammo-assembling-machine.png",
+    icon_size = 32,
     flags = {"placeable-neutral","placeable-player", "player-creation"},
     minable = {hardness = 0.2, mining_time = 0.5, result = "tank-ammo-assembling-machine"},
     max_health = 150,
@@ -208,27 +210,28 @@ data:extend (
     type = "corpse",
     name = "massive-scorchmark",
     icon = "__base__/graphics/icons/small-scorchmark.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "not-on-map", "placeable-off-grid"},
     collision_box = {{-1.5, -1.5}, {1.5, 1.5}},
     collision_mask = {"doodad-layer", "not-colliding-with-itself"},
     selection_box = {{-1, -1}, {1, 1}},
     selectable_in_game = false,
     time_before_removed = 60 * 60 * 10, -- 10 minutes
-    final_render_layer = "ground_patch_higher2",
+    final_render_layer = "ground-patch-higher2",
     subgroup = "remnants",
     order="d[remnants]-b[scorchmark]-a[small]",
     animation =
     {
-      sheet=
-      {
+--      sheet=
+--      {
         width = 110,
         height = 90,
-		scale = 5,
+		    scale = 5,
         frame_count = 1,
         direction_count = 1,
         filename = "__base__/graphics/entity/scorchmark/small-scorchmark.png",
         variation_count = 3
-      }
+--      }
     },
     ground_patch =
     {
@@ -236,7 +239,7 @@ data:extend (
       {
         width = 110,
         height = 90,
-		scale = 5,
+		    scale = 5,
         frame_count = 1,
         direction_count = 1,
         x = 110 * 2,
@@ -262,6 +265,7 @@ data:extend (
 -- land-mine-poison
   {
     type = "land-mine",
+    icon_size = 32,
     name = "land-mine-poison",
     icon = "__base__/graphics/icons/land-mine.png",
     flags =
@@ -306,7 +310,7 @@ data:extend (
             action =
             {
               type = "area",
-              perimeter = 6,
+              radius = 6,
               collision_mask = { "player-layer" },
               action_delivery =
               {
@@ -333,7 +337,7 @@ data:extend (
   },
 -- lazer-cloud
   {
-    type = "smoke",
+    type = "trivial-smoke",
     name = "lazer-cloud",
     flags = {"not-on-map"},
     show_when_smoke_off = true,
@@ -367,7 +371,7 @@ data:extend (
           action =
           {
             type = "area",
-            perimeter = 11,
+            radius = 11,
             entity_flags = {"breaths-air"},
             action_delivery =
             {
@@ -420,7 +424,7 @@ data:extend (
           action =
           {
             type = "area",
-            perimeter = 11,
+            radius = 11,
             entity_flags = {"breaths-air"},
             action_delivery =
             {
@@ -439,9 +443,10 @@ data:extend (
   },
 -- Iron wall
   {
-    type = "wall",
+    type = "wall",    
     name = "iron-wall",
     icon = "__tanks_for_bob__/graphics/icons/iron-wall.png",
+    icon_size = 32,
     flags = {"placeable-neutral", "player-creation"},
     collision_box = {{-0.29, -0.29}, {0.29, 0.29}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},

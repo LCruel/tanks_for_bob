@@ -5,6 +5,7 @@ data:extend(
     type = "ammo-turret",
     name = "auto-cannon-turret",
     icon = "__base__/graphics/icons/gun-turret.png",
+    icon_size = 32,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 0.5, result = "auto-cannon-turret"},
     max_health = 400,

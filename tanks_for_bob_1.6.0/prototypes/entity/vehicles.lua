@@ -6,6 +6,7 @@ data:extend(
     type = "car",
     name = "modular-tank",
     icon = "__tanks_for_bob__/graphics/icons/auto-tank.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "auto-tank"},
     max_health = 1000,
@@ -103,62 +104,62 @@ data:extend(
       layers =
       {
         {
-          width = 139,
-          height = 110,
+          priority = "low",
+          width = 135,
+          height = 106,
           frame_count = 2,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.28125},
+          shift = util.by_pixel(-4.5, -10),
           animation_speed = 8,
           max_advance = 1,
           stripes =
           {
             {
-             filename = "__base__/graphics/entity/tank/base-1.png",
+             filename = "__base__/graphics/entity/tank/tank-base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-2.png",
+             filename = "__base__/graphics/entity/tank/tank-base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-3.png",
+             filename = "__base__/graphics/entity/tank/tank-base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-4.png",
+             filename = "__base__/graphics/entity/tank/tank-base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.65625},
+          shift = util.by_pixel(-5, -21),
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -176,22 +177,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -204,18 +205,18 @@ data:extend(
       layers =
       {
         {
-          filename = "__base__/graphics/entity/tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.15625, -1.07812},
-          animation_speed = 12,
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -226,7 +227,7 @@ data:extend(
           shift = {-0.15625, -1.23438},
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -288,6 +289,7 @@ data:extend(
     type = "car",
     name = "flame-tank",
     icon = "__tanks_for_bob__/graphics/icons/flame-tank.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "flame-tank"},
     max_health = 1250,
@@ -385,62 +387,62 @@ data:extend(
       layers =
       {
         {
-          width = 139,
-          height = 110,
+          priority = "low",
+          width = 135,
+          height = 106,
           frame_count = 2,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.28125},
+          shift = util.by_pixel(-4.5, -10),
           animation_speed = 8,
           max_advance = 1,
           stripes =
           {
             {
-             filename = "__base__/graphics/entity/tank/base-1.png",
+             filename = "__base__/graphics/entity/tank/tank-base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-2.png",
+             filename = "__base__/graphics/entity/tank/tank-base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-3.png",
+             filename = "__base__/graphics/entity/tank/tank-base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-4.png",
+             filename = "__base__/graphics/entity/tank/tank-base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.65625},
+          shift = util.by_pixel(-5, -21),
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -458,22 +460,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -486,18 +488,18 @@ data:extend(
       layers =
       {
         {
-          filename = "__base__/graphics/entity/tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.15625, -1.07812},
+          shift = util.by_pixel(-5, -34.5),
           animation_speed = 8,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -508,7 +510,7 @@ data:extend(
           shift = {-0.15625, -1.23438},
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -569,6 +571,7 @@ data:extend(
     type = "car",
     name = "flame-tank-wlsk",
     icon = "__tanks_for_bob__/graphics/icons/flame-tank-wlsk.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "flame-tank-wlsk"},
     max_health = 2000,
@@ -666,62 +669,62 @@ data:extend(
       layers =
       {
         {
-          width = 139,
-          height = 110,
+          priority = "low",
+          width = 135,
+          height = 106,
           frame_count = 2,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.28125},
+          shift = util.by_pixel(-4.5, -10),
           animation_speed = 8,
           max_advance = 1,
           stripes =
           {
             {
-             filename = "__base__/graphics/entity/tank/base-1.png",
+             filename = "__base__/graphics/entity/tank/tank-base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-2.png",
+             filename = "__base__/graphics/entity/tank/tank-base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-3.png",
+             filename = "__base__/graphics/entity/tank/tank-base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-4.png",
+             filename = "__base__/graphics/entity/tank/tank-base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.65625},
+          shift = util.by_pixel(-5, -21),
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -739,22 +742,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -767,18 +770,18 @@ data:extend(
       layers =
       {
         {
-          filename = "__base__/graphics/entity/tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.15625, -1.07812},
+          shift = util.by_pixel(-5, -34.5),
           animation_speed = 8,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -789,7 +792,7 @@ data:extend(
           shift = {-0.15625, -1.23438},
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -850,6 +853,7 @@ data:extend(
     type = "car",
     name = "auto-tank",
     icon = "__tanks_for_bob__/graphics/icons/auto-tank.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "auto-tank"},
     max_health = 1000,
@@ -947,62 +951,62 @@ data:extend(
       layers =
       {
         {
-          width = 139,
-          height = 110,
+          priority = "low",
+          width = 135,
+          height = 106,
           frame_count = 2,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.28125},
+          shift = util.by_pixel(-4.5, -10),
           animation_speed = 8,
           max_advance = 1,
           stripes =
           {
             {
-             filename = "__base__/graphics/entity/tank/base-1.png",
+             filename = "__base__/graphics/entity/tank/tank-base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-2.png",
+             filename = "__base__/graphics/entity/tank/tank-base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-3.png",
+             filename = "__base__/graphics/entity/tank/tank-base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-4.png",
+             filename = "__base__/graphics/entity/tank/tank-base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.65625},
+          shift = util.by_pixel(-5, -21),
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -1020,22 +1024,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -1048,18 +1052,18 @@ data:extend(
       layers =
       {
         {
-          filename = "__base__/graphics/entity/tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.15625, -1.07812},
-          animation_speed = 12,
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -1070,7 +1074,7 @@ data:extend(
           shift = {-0.15625, -1.23438},
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -1131,6 +1135,7 @@ data:extend(
     type = "car",
     name = "auto-tank-wlsk",
     icon = "__tanks_for_bob__/graphics/icons/auto-tank-lvl2.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "auto-tank-wlsk"},
     max_health = 1750,
@@ -1228,62 +1233,62 @@ data:extend(
       layers =
       {
         {
-          width = 139,
-          height = 110,
+          priority = "low",
+          width = 135,
+          height = 106,
           frame_count = 2,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.28125},
+          shift = util.by_pixel(-4.5, -10),
           animation_speed = 8,
           max_advance = 1,
           stripes =
           {
             {
-             filename = "__base__/graphics/entity/tank/base-1.png",
+             filename = "__base__/graphics/entity/tank/tank-base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-2.png",
+             filename = "__base__/graphics/entity/tank/tank-base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-3.png",
+             filename = "__base__/graphics/entity/tank/tank-base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-4.png",
+             filename = "__base__/graphics/entity/tank/tank-base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.65625},
+          shift = util.by_pixel(-5, -21),
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -1301,22 +1306,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -1329,18 +1334,18 @@ data:extend(
       layers =
       {
         {
-          filename = "__base__/graphics/entity/tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.15625, -1.07812},
-          animation_speed = 12,
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -1351,7 +1356,7 @@ data:extend(
           shift = {-0.15625, -1.23438},
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -1412,6 +1417,7 @@ data:extend(
     type = "car",
     name = "nade-tank",
 	  icon = "__tanks_for_bob__/graphics/icons/nade-tank.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "nade-tank"},
     max_health = 1000,
@@ -1509,62 +1515,62 @@ data:extend(
       layers =
       {
         {
-          width = 139,
-          height = 110,
+          priority = "low",
+          width = 135,
+          height = 106,
           frame_count = 2,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.28125},
+          shift = util.by_pixel(-4.5, -10),
           animation_speed = 8,
           max_advance = 1,
           stripes =
           {
             {
-             filename = "__base__/graphics/entity/tank/base-1.png",
+             filename = "__base__/graphics/entity/tank/tank-base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-2.png",
+             filename = "__base__/graphics/entity/tank/tank-base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-3.png",
+             filename = "__base__/graphics/entity/tank/tank-base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-4.png",
+             filename = "__base__/graphics/entity/tank/tank-base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.65625},
+          shift = util.by_pixel(-5, -21),
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -1582,22 +1588,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -1610,18 +1616,18 @@ data:extend(
       layers =
       {
         {
-          filename = "__base__/graphics/entity/tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.15625, -1.07812},
-          animation_speed = 12,
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -1632,7 +1638,7 @@ data:extend(
           shift = {-0.15625, -1.23438},
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -1693,6 +1699,7 @@ data:extend(
     type = "car",
     name = "nade-tank-wlsk",
 	  icon = "__tanks_for_bob__/graphics/icons/nade-tank-wlsk.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "nade-tank-wlsk"},
     max_health = 1750,
@@ -1790,62 +1797,62 @@ data:extend(
       layers =
       {
         {
-          width = 139,
-          height = 110,
+          priority = "low",
+          width = 135,
+          height = 106,
           frame_count = 2,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.28125},
+          shift = util.by_pixel(-4.5, -10),
           animation_speed = 8,
           max_advance = 1,
           stripes =
           {
             {
-             filename = "__base__/graphics/entity/tank/base-1.png",
+             filename = "__base__/graphics/entity/tank/tank-base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-2.png",
+             filename = "__base__/graphics/entity/tank/tank-base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-3.png",
+             filename = "__base__/graphics/entity/tank/tank-base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-4.png",
+             filename = "__base__/graphics/entity/tank/tank-base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.65625},
+          shift = util.by_pixel(-5, -21),
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -1863,22 +1870,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -1891,18 +1898,18 @@ data:extend(
       layers =
       {
         {
-          filename = "__base__/graphics/entity/tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.15625, -1.07812},
-          animation_speed = 12,
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -1913,7 +1920,7 @@ data:extend(
           shift = {-0.15625, -1.23438},
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -1974,6 +1981,7 @@ data:extend(
     type = "car",
     name = "mine-tank",
     icon = "__tanks_for_bob__/graphics/icons/mine-tank.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "mine-tank"},
     max_health = 1000,
@@ -2071,62 +2079,62 @@ data:extend(
       layers =
       {
         {
-          width = 139,
-          height = 110,
+          priority = "low",
+          width = 135,
+          height = 106,
           frame_count = 2,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.28125},
+          shift = util.by_pixel(-4.5, -10),
           animation_speed = 8,
           max_advance = 1,
           stripes =
           {
             {
-             filename = "__base__/graphics/entity/tank/base-1.png",
+             filename = "__base__/graphics/entity/tank/tank-base-1.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-2.png",
+             filename = "__base__/graphics/entity/tank/tank-base-2.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-3.png",
+             filename = "__base__/graphics/entity/tank/tank-base-3.png",
              width_in_frames = 2,
              height_in_frames = 16,
             },
             {
-             filename = "__base__/graphics/entity/tank/base-4.png",
+             filename = "__base__/graphics/entity/tank/tank-base-4.png",
              width_in_frames = 2,
              height_in_frames = 16,
             }
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.140625, -0.65625},
+          shift = util.by_pixel(-5, -21),
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -2144,22 +2152,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -2172,18 +2180,18 @@ data:extend(
       layers =
       {
         {
-          filename = "__base__/graphics/entity/tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {-0.15625, -1.07812},
-          animation_speed = 12,
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -2194,7 +2202,7 @@ data:extend(
           shift = {-0.15625, -1.23438},
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -2255,6 +2263,7 @@ data:extend(
   type = "car",
   name = "rocket-tank",
   icon = "__tanks_for_bob__/graphics/icons/rocket-tank.png",
+  icon_size = 32,
   flags = {"pushable", "placeable-neutral", "player-creation"},
   minable = {mining_time = 1, result = "rocket-tank"},
   max_health = 1000,
@@ -2352,62 +2361,62 @@ data:extend(
     layers =
     {
       {
-        width = 139,
-        height = 110,
-        frame_count = 2,
-        axially_symmetrical = false,
-        direction_count = 64,
-        shift = {-0.140625, -0.28125},
-        animation_speed = 8,
-        max_advance = 1,
-        stripes =
+          priority = "low",
+          width = 135,
+          height = 106,
+          frame_count = 2,
+          direction_count = 64,
+          shift = util.by_pixel(-4.5, -10),
+          animation_speed = 8,
+          max_advance = 1,
+          stripes =
         {
           {
-           filename = "__base__/graphics/entity/tank/base-1.png",
+           filename = "__base__/graphics/entity/tank/tank-base-1.png",
            width_in_frames = 2,
            height_in_frames = 16,
           },
           {
-           filename = "__base__/graphics/entity/tank/base-2.png",
+           filename = "__base__/graphics/entity/tank/tank-base-2.png",
            width_in_frames = 2,
            height_in_frames = 16,
           },
           {
-           filename = "__base__/graphics/entity/tank/base-3.png",
+           filename = "__base__/graphics/entity/tank/tank-base-3.png",
            width_in_frames = 2,
            height_in_frames = 16,
           },
           {
-           filename = "__base__/graphics/entity/tank/base-4.png",
+           filename = "__base__/graphics/entity/tank/tank-base-4.png",
            width_in_frames = 2,
            height_in_frames = 16,
           }
         }
       },
       {
-        width = 109,
-        height = 88,
-        frame_count = 2,
-        apply_runtime_tint = true,
-        axially_symmetrical = false,
-        direction_count = 64,
-        shift = {-0.140625, -0.65625},
-        max_advance = 1,
-        line_length = 2,
-        stripes = util.multiplystripes(2,
+          priority = "low",
+          width = 104,
+          height = 84,
+          frame_count = 2,
+          apply_runtime_tint = true,
+          direction_count = 64,
+          shift = util.by_pixel(-5, -21),
+          max_advance = 1,
+          line_length = 2,
+          stripes = util.multiplystripes(2,
         {
           {
-            filename = "__base__/graphics/entity/tank/base-mask-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
             width_in_frames = 1,
             height_in_frames = 22,
         },
         {
-          filename = "__base__/graphics/entity/tank/base-mask-2.png",
+          filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
           width_in_frames = 1,
             height_in_frames = 22,
           },
           {
-            filename = "__base__/graphics/entity/tank/base-mask-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
             width_in_frames = 1,
             height_in_frames = 20,
           },
@@ -2425,22 +2434,22 @@ data:extend(
         stripes = util.multiplystripes(2,
         {
          {
-          filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+          filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
           width_in_frames = 1,
           height_in_frames = 16,
          },
          {
-          filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+          filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
           width_in_frames = 1,
           height_in_frames = 16,
          },
          {
-          filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+          filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
           width_in_frames = 1,
           height_in_frames = 16,
          },
          {
-          filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+          filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
           width_in_frames = 1,
           height_in_frames = 16,
          }
@@ -2453,18 +2462,18 @@ data:extend(
     layers =
     {
       {
-        filename = "__base__/graphics/entity/tank/turret.png",
-        line_length = 8,
-        width = 92,
-        height = 69,
-        frame_count = 1,
-        axially_symmetrical = false,
-        direction_count = 64,
-        shift = {-0.15625, -1.07812},
-        animation_speed = 12,
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
+          line_length = 8,
+          width = 90,
+          height = 67,
+          frame_count = 1,
+          direction_count = 64,
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
       },
       {
-        filename = "__base__/graphics/entity/tank/turret-mask.png",
+        filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
         line_length = 8,
         width = 38,
         height = 29,
@@ -2475,7 +2484,7 @@ data:extend(
         shift = {-0.15625, -1.23438},
       },
       {
-        filename = "__base__/graphics/entity/tank/turret-shadow.png",
+        filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
         line_length = 8,
         width = 95,
         height = 67,
@@ -2536,6 +2545,7 @@ data:extend(
     type = "car",
     name = "super-tank",
     icon = "__tanks_for_bob__/graphics/icons/super-tank.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "super-tank"},
     max_health = 4500,
@@ -2668,30 +2678,30 @@ data:extend(
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {2*-0.140625, 2*-0.65625},
-		      scale = 2,
+          shift = util.by_pixel(-5, -21),
+          scale = 2,
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -2710,22 +2720,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -2738,19 +2748,19 @@ data:extend(
       layers =
       {
         {
-          filename = "__tanks_for_bob__/graphics/entity/super-tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {2*-0.15625, 2*-1.07812},
-		      scale = 2,
-          animation_speed = 12,
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
+          scale = 2,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -2759,10 +2769,10 @@ data:extend(
           apply_runtime_tint = true,
           direction_count = 64,
           shift = {2*-0.15625, 2*-1.23438},
-		    scale = 2,
+		      scale = 2,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -2824,6 +2834,7 @@ data:extend(
     type = "car",
     name = "super-tank-alternate",
     icon = "__tanks_for_bob__/graphics/icons/super-tank-alternate.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "super-tank-alternate"},
     max_health = 4500,
@@ -2956,30 +2967,30 @@ data:extend(
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {2*-0.140625, 2*-0.65625},
-		      scale = 2,
+          shift = util.by_pixel(-5, -21),
+          scale = 2,
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -2998,22 +3009,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -3026,19 +3037,19 @@ data:extend(
       layers =
       {
         {
-          filename = "__tanks_for_bob__/graphics/entity/super-tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {2*-0.15625, 2*-1.07812},
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
 		      scale = 2,
-          animation_speed = 12,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -3050,7 +3061,7 @@ data:extend(
 		      scale = 2,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -3112,6 +3123,7 @@ data:extend(
     type = "car",
     name = "super-tank-wmd",
     icon = "__tanks_for_bob__/graphics/icons/super-tank-wmd.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation"},
     minable = {mining_time = 1, result = "super-tank-wmd"},
     max_health = 4500,
@@ -3244,30 +3256,30 @@ data:extend(
           }
         },
         {
-          width = 109,
-          height = 88,
+          priority = "low",
+          width = 104,
+          height = 84,
           frame_count = 2,
           apply_runtime_tint = true,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {2*-0.140625, 2*-0.65625},
-		  scale = 2,
+          shift = util.by_pixel(-5, -21),
+          scale = 2,
           max_advance = 1,
           line_length = 2,
           stripes = util.multiplystripes(2,
           {
             {
-              filename = "__base__/graphics/entity/tank/base-mask-1.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-1.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-2.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-2.png",
               width_in_frames = 1,
               height_in_frames = 22,
             },
             {
-              filename = "__base__/graphics/entity/tank/base-mask-3.png",
+              filename = "__base__/graphics/entity/tank/tank-base-mask-3.png",
               width_in_frames = 1,
               height_in_frames = 20,
             },
@@ -3286,22 +3298,22 @@ data:extend(
           stripes = util.multiplystripes(2,
           {
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-1.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-1.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-2.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-2.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-3.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-3.png",
             width_in_frames = 1,
             height_in_frames = 16,
            },
            {
-            filename = "__base__/graphics/entity/tank/base-shadow-4.png",
+            filename = "__base__/graphics/entity/tank/tank-base-shadow-4.png",
             width_in_frames = 1,
             height_in_frames = 16,
            }
@@ -3314,19 +3326,19 @@ data:extend(
       layers =
       {
         {
-          filename = "__tanks_for_bob__/graphics/entity/super-tank/turret.png",
+          filename = "__base__/graphics/entity/tank/tank-turret.png",
+          priority = "low",
           line_length = 8,
-          width = 92,
-          height = 69,
+          width = 90,
+          height = 67,
           frame_count = 1,
-          axially_symmetrical = false,
           direction_count = 64,
-          shift = {2*-0.15625, 2*-1.07812},
-		  scale = 2,
-          animation_speed = 12,
+          shift = util.by_pixel(-5, -34.5),
+          animation_speed = 8,
+    		  scale = 2,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-mask.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-mask.png",
           line_length = 8,
           width = 38,
           height = 29,
@@ -3338,7 +3350,7 @@ data:extend(
 		      scale = 2,
         },
         {
-          filename = "__base__/graphics/entity/tank/turret-shadow.png",
+          filename = "__base__/graphics/entity/tank/tank-turret-shadow.png",
           line_length = 8,
           width = 95,
           height = 67,
@@ -3400,6 +3412,7 @@ data:extend(
     type = "car",
     name = "car-flamer",
     icon = "__tanks_for_bob__/graphics/icons/car-flamer.png",
+    icon_size = 32,
     flags = {"pushable", "placeable-neutral", "player-creation", "placeable-off-grid"},
     minable = {mining_time = 1, result = "car-flamer"},
     max_health = 250,

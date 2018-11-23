@@ -30,7 +30,8 @@ data:extend(
       },
       {
         type = "area",
-        perimeter = 8,
+--        perimeter = 8,
+        radius = 8,
         action_delivery =
         {
           type = "instant",
@@ -92,7 +93,7 @@ data:extend(
       },
       {
         type = "area",
-        perimeter = 8,
+        radius = 8,
         action_delivery =
         {
           type = "instant",
@@ -255,7 +256,7 @@ data:extend(
       },
       {
         type = "area",
-        perimeter = 4,
+        radius = 4,
         action_delivery =
         {
           type = "instant",
@@ -317,7 +318,7 @@ data:extend(
             action =
             {
               type = "area",
-              perimeter = 5,
+              radius = 5,
               action_delivery =
               {
                 type = "instant",
@@ -399,7 +400,7 @@ data:extend(
       },
       {
         type = "area",
-        perimeter = 25,
+        radius = 25,
         action_delivery =
         {
           type = "instant",

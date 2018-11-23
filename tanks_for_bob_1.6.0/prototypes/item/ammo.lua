@@ -5,6 +5,7 @@ data:extend(
     type = "ammo",
     name = "piercing-shotgun-shell-brick",
     icon = "__tanks_for_bob__/graphics/icons/shell-brick.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -40,6 +41,7 @@ data:extend(
     type = "ammo",
     name = "ap-bullet-brick",
     icon = "__tanks_for_bob__/graphics/icons/bullet-brick.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -79,6 +81,7 @@ data:extend(
     type = "ammo",
     name = "flame-thrower-ammo-tanker",
     icon = "__tanks_for_bob__/graphics/icons/flame-thrower-ammo-tanker.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -111,6 +114,7 @@ data:extend(
     type = "ammo",
     name = "flame-thrower-ammo-tanker-2",
     icon = "__tanks_for_bob__/graphics/icons/flame-thrower-ammo-tanker.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -121,63 +125,62 @@ data:extend(
         type = "direct",
         action_delivery =
         {
-			{
-				type = "flame-thrower",
-				explosion = "tank-flame-thrower-explosion",
-				direction_deviation = 1.0,
-				speed_deviation = 0.1,
-				starting_frame_deviation = 0.07,
-				projectile_starting_speed = 0.2,
-				starting_distance = 0.6,
-			},	
-			{
-				type = "flame-thrower",
-				explosion = "tank-flame-thrower-explosion",
-				direction_deviation = 1.0,
-				speed_deviation = 0.1,
-				starting_frame_deviation = 0.07,
-				projectile_starting_speed = 0.2,
-				starting_distance = 0.6,
-			},	
-			{
-				type = "flame-thrower",
-				explosion = "tank-flame-thrower-explosion",
-				direction_deviation = 1.0,
-				speed_deviation = 0.1,
-				starting_frame_deviation = 0.07,
-				projectile_starting_speed = 0.2,
-				starting_distance = 0.6,
-			},	
-			{
-				type = "flame-thrower",
-				explosion = "tank-flame-thrower-explosion",
-				direction_deviation = 1.0,
-				speed_deviation = 0.1,
-				starting_frame_deviation = 0.07,
-				projectile_starting_speed = 0.2,
-				starting_distance = 0.6,
-			},	
-			{
-				type = "flame-thrower",
-				explosion = "tank-flame-thrower-explosion",
-				direction_deviation = 1.0,
-				speed_deviation = 0.1,
-				starting_frame_deviation = 0.07,
-				projectile_starting_speed = 0.2,
-				starting_distance = 0.6,
-			},	
-			{
-				type = "flame-thrower",
-				explosion = "tank-flame-thrower-explosion",
-				direction_deviation = 1.0,
-				speed_deviation = 0.1,
-				starting_frame_deviation = 0.07,
-				projectile_starting_speed = 0.2,
-				starting_distance = 0.6,
-			},	
-        }		
+    			{
+    				type = "flame-thrower",
+    				explosion = "tank-flame-thrower-explosion",
+    				direction_deviation = 1.0,
+    				speed_deviation = 0.1,
+    				starting_frame_deviation = 0.07,
+    				projectile_starting_speed = 0.2,
+    				starting_distance = 0.6,
+    			},	
+    			{
+    				type = "flame-thrower",
+    				explosion = "tank-flame-thrower-explosion",
+    				direction_deviation = 1.0,
+    				speed_deviation = 0.1,
+    				starting_frame_deviation = 0.07,
+    				projectile_starting_speed = 0.2,
+    				starting_distance = 0.6,
+    			},	
+    			{
+    				type = "flame-thrower",
+    				explosion = "tank-flame-thrower-explosion",
+    				direction_deviation = 1.0,
+    				speed_deviation = 0.1,
+    				starting_frame_deviation = 0.07,
+    				projectile_starting_speed = 0.2,
+    				starting_distance = 0.6,
+    			},	
+    			{
+    				type = "flame-thrower",
+    				explosion = "tank-flame-thrower-explosion",
+    				direction_deviation = 1.0,
+    				speed_deviation = 0.1,
+    				starting_frame_deviation = 0.07,
+    				projectile_starting_speed = 0.2,
+    				starting_distance = 0.6,
+    			},	
+    			{
+    				type = "flame-thrower",
+    				explosion = "tank-flame-thrower-explosion",
+    				direction_deviation = 1.0,
+    				speed_deviation = 0.1,
+    				starting_frame_deviation = 0.07,
+    				projectile_starting_speed = 0.2,
+    				starting_distance = 0.6,
+    			},	
+    			{
+    				type = "flame-thrower",
+    				explosion = "tank-flame-thrower-explosion",
+    				direction_deviation = 1.0,
+    				speed_deviation = 0.1,
+    				starting_frame_deviation = 0.07,
+    				projectile_starting_speed = 0.2,
+    				starting_distance = 0.6,
+    			},	
+        }
       }
-	  
     },
     magazine_size = 500,
     subgroup = "tank-ammo",
@@ -189,6 +192,7 @@ data:extend(
     type = "ammo",
     name = "45mm-auto",
     icon = "__tanks_for_bob__/graphics/icons/cannon-auto-ammo.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -223,6 +227,7 @@ data:extend(
     type = "ammo",
     name = "50mm-mortar",
     icon = "__tanks_for_bob__/graphics/icons/nade_tank_ammo.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -292,6 +297,7 @@ data:extend(
     type = "ammo",
     name = "50mm-mortar-poison",
     icon = "__tanks_for_bob__/graphics/icons/nade_tank_ammo-poison.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -326,6 +332,7 @@ data:extend(
     type = "ammo",
     name = "minepack",
     icon = "__tanks_for_bob__/graphics/icons/mine-pack.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -360,6 +367,7 @@ data:extend(
     type = "ammo",
     name = "minepack-poison",
     icon = "__tanks_for_bob__/graphics/icons/mine-pack-poison.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -394,6 +402,7 @@ data:extend(
     type = "ammo",
     name = "rocketpack",
     icon = "__tanks_for_bob__/graphics/icons/rocket-pack.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -424,6 +433,7 @@ data:extend(
     type = "ammo",
     name = "cannon-shell-2",
     icon = "__tanks_for_bob__/graphics/icons/tank-ammo-shell2.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {
@@ -457,6 +467,7 @@ data:extend(
     type = "ammo",
     name = "tank-wmd-ammo",
     icon = "__tanks_for_bob__/graphics/icons/tank-ammo-wmd.png",
+    icon_size = 32,
     flags = {"goes-to-main-inventory"},
     ammo_type =
     {

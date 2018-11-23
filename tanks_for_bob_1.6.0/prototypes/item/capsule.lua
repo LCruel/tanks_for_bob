@@ -6,6 +6,7 @@ data:extend(
     type = "capsule",
     name = "tank-recall-token",
     icon = "__tanks_for_bob__/graphics/icons/tank-recall-token.png",
+    icon_size = 32,
     flags = {"goes-to-quickbar"},
     capsule_action =
     {

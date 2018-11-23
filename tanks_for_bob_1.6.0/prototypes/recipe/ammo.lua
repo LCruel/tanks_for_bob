@@ -10,7 +10,7 @@ data:extend(
     ingredients =
     {
        {"tank-ammo-casing", 2},
-	     {"flame-thrower-ammo", 5}
+	     {"flamethrower-ammo", 5}
     },
     result = "flame-thrower-ammo-tanker",
   },
